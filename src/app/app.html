@@ -1,14 +1,40 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title>STL</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
+      <!--
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
+      </button>
+      -->
+       <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.homePage)">
+        <ion-icon name="home"></ion-icon>
+        Start
+      </button>
+      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.profilePage)">
+        <ion-icon name="person"></ion-icon>
+        Min profil
+      </button>
+      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.coursePage)">
+        <ion-icon name="book"></ion-icon>
+        Kurser
+      </button>
+      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.assignmentPage)">
+        <ion-icon name="bookmarks"></ion-icon>
+        Uppgifter
+      </button>
+      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.feedbackPage)">
+      <ion-icon name="happy"></ion-icon>
+        Återkoppling
+    </button>
+      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.importantPage)">
+        <ion-icon name="calendar"></ion-icon>
+        Viktiga Datum
       </button>
     </ion-list>
   </ion-content>

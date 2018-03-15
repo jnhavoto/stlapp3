@@ -4,7 +4,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+//import { ListPage } from '../pages/list/list';
+//import {LoginPage} from "../pages/login/login";
+import {AssignmentsPage} from "../pages/assignments/assignments";
+import {MyprofilePage} from "../pages/myprofile/myprofile";
+import {CoursesPage} from "../pages/courses/courses";
+import {FeedbacksPage} from "../pages/feedbacks/feedbacks";
+import {ImportantdatesPage} from "../pages/importantdates/importantdates";
 
 @Component({
   templateUrl: 'app.html'
@@ -15,15 +21,29 @@ export class MyApp {
   rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
+  pages2:any;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+        { title: 'Home', component: HomePage },
+        { title: 'My Profile', component: MyprofilePage },
+        { title: 'Courses', component: CoursesPage },
+        //{ title: 'List', component: ListPage },
+        {title:'Assignments',component: AssignmentsPage},
+        {title:'Feedbacks',component: FeedbacksPage},
+        {title:'Important Dates',component: AssignmentsPage},
     ];
+    this.pages2={
+        homePage: HomePage,
+        profilePage: MyprofilePage,
+        coursePage: CoursesPage,
+        assignmentPage: AssignmentsPage,
+        feedbackPage: FeedbacksPage,
+        importantPage: ImportantdatesPage,
+    }
 
   }
 
