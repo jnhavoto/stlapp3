@@ -21,7 +21,7 @@
     <div text-center>
         <ion-img width="120" height="120" src="/img/myprofile_icon.jpg"></ion-img>
     </div>
-    <h5 ion-text color="danger" text-center>Full name</h5>
+    <h5 ion-text color="danger" text-center>{{users.student_id}}</h5>
     <ion-toolbar>
         <ion-title>Personuppgifter</ion-title>
     </ion-toolbar>
@@ -33,6 +33,6 @@
       <ion-item name="cityname"> <ion-icon md="md-globe"> </ion-icon> City name</ion-item>
       <ion-item name="school_name"> <ion-icon md="md-home"> </ion-icon> School name</ion-item>
   </ion-list>
-    <button ion-button color="danger">My Results</button>
-    <button ion-button color="danger">Self-Assessment</button>
+    <button (click)="navToMyResults()" ion-button color="danger">My Results</button>
+    <button (click)="navToSelfAssessments()" ion-button color="danger">Self-Assessments</button>
 </ion-content>

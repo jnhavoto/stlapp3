@@ -1,4 +1,4 @@
-webpackJsonp([8],{
+webpackJsonp([10],{
 
 /***/ 100:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -187,6 +187,7 @@ var ImportantdatesPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyprofilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_service_service__ = __webpack_require__(160);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -198,6 +199,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
  * Generated class for the MyprofilePage page.
  *
@@ -205,27 +207,48 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var MyprofilePage = (function () {
-    function MyprofilePage(navCtrl, navParams) {
+    function MyprofilePage(navCtrl, navParams, restProvider) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.restProvider = restProvider;
+        this.getUser();
     }
     MyprofilePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad MyprofilePage');
     };
+    MyprofilePage.prototype.navToMyResults = function () {
+        this.navCtrl.push('MyresultsPage');
+        console.log('Navigating to another module');
+    };
+    MyprofilePage.prototype.navToSelfAssessments = function () {
+        this.navCtrl.push('MyselfassessmentsPage');
+        console.log('navigating within same module');
+    };
+    MyprofilePage.prototype.getUser = function () {
+        var _this = this;
+        this.restProvider.getUsers()
+            .subscribe(function (result) {
+            _this.users = result;
+            console.log(result['resultado'].student_id);
+        }, function (error) {
+            console.log(error);
+        });
+    };
     MyprofilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-myprofile',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\myprofile\myprofile.html"*/'<!--\n  Generated template for the MyprofilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Min Profil</ion-title>\n    <ion-buttons end> <button ion-button> STL </button> </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <!-- dimensions set using attributes -->\n    <div text-center>\n        <ion-img width="120" height="120" src="/img/myprofile_icon.jpg"></ion-img>\n    </div>\n    <h5 ion-text color="danger" text-center>Full name</h5>\n    <ion-toolbar>\n        <ion-title>Personuppgifter</ion-title>\n    </ion-toolbar>\n\n  <ion-list>\n      <ion-item name="fullname"> <ion-icon md="md-person"> </ion-icon> Full name</ion-item>\n      <ion-item name="email"> <ion-icon md="md-mail"> </ion-icon> Email</ion-item>\n      <ion-item name="telephone"> <ion-icon md="md-call"> </ion-icon> Telephone</ion-item>\n      <ion-item name="cityname"> <ion-icon md="md-globe"> </ion-icon> City name</ion-item>\n      <ion-item name="school_name"> <ion-icon md="md-home"> </ion-icon> School name</ion-item>\n  </ion-list>\n    <button ion-button color="danger">My Results</button>\n    <button ion-button color="danger">Self-Assessment</button>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\myprofile\myprofile.html"*/,
+            selector: 'page-myprofile',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\myprofile\myprofile.html"*/'<!--\n  Generated template for the MyprofilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Min Profil</ion-title>\n    <ion-buttons end> <button ion-button> STL </button> </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <!-- dimensions set using attributes -->\n    <div text-center>\n        <ion-img width="120" height="120" src="/img/myprofile_icon.jpg"></ion-img>\n    </div>\n    <h5 ion-text color="danger" text-center>{{users.student_id}}</h5>\n    <ion-toolbar>\n        <ion-title>Personuppgifter</ion-title>\n    </ion-toolbar>\n\n  <ion-list>\n      <ion-item name="fullname"> <ion-icon md="md-person"> </ion-icon> Full name</ion-item>\n      <ion-item name="email"> <ion-icon md="md-mail"> </ion-icon> Email</ion-item>\n      <ion-item name="telephone"> <ion-icon md="md-call"> </ion-icon> Telephone</ion-item>\n      <ion-item name="cityname"> <ion-icon md="md-globe"> </ion-icon> City name</ion-item>\n      <ion-item name="school_name"> <ion-icon md="md-home"> </ion-icon> School name</ion-item>\n  </ion-list>\n    <button (click)="navToMyResults()" ion-button color="danger">My Results</button>\n    <button (click)="navToSelfAssessments()" ion-button color="danger">Self-Assessments</button>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\myprofile\myprofile.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_service_service__["a" /* ServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_service_service__["a" /* ServiceProvider */]) === "function" && _c || Object])
     ], MyprofilePage);
     return MyprofilePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=myprofile.js.map
 
 /***/ }),
 
-/***/ 115:
+/***/ 117:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -238,45 +261,53 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 115;
+webpackEmptyAsyncContext.id = 117;
 
 /***/ }),
 
-/***/ 156:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/assignments/assignments.module": [
-		276,
-		7
+		283,
+		9
 	],
 	"../pages/courses/courses.module": [
-		277,
-		6
+		284,
+		8
 	],
 	"../pages/feedbacks/feedbacks.module": [
-		278,
-		5
+		285,
+		7
 	],
 	"../pages/home/home.module": [
-		279,
-		4
+		286,
+		6
 	],
 	"../pages/importantdates/importantdates.module": [
-		280,
-		3
+		287,
+		5
 	],
 	"../pages/login/login.module": [
-		281,
-		1
+		288,
+		3
 	],
 	"../pages/menu/menu.module": [
-		282,
-		0
+		289,
+		2
 	],
 	"../pages/myprofile/myprofile.module": [
-		283,
-		2
+		290,
+		4
+	],
+	"../pages/myresults/myresults.module": [
+		291,
+		1
+	],
+	"../pages/myselfassessments/myselfassessments.module": [
+		292,
+		0
 	]
 };
 function webpackAsyncContext(req) {
@@ -290,18 +321,68 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 156;
+webpackAsyncContext.id = 159;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 200:
+/***/ 160:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/*
+  Generated class for the ServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var ServiceProvider = (function () {
+    function ServiceProvider(http) {
+        this.http = http;
+        console.log('Hello ServiceProvider Provider');
+    }
+    ServiceProvider.prototype.getUsers1 = function () {
+        var _this = this;
+        return new Promise(function (resolve) {
+            _this.http.get("http://127.0.0.1:1000/api/student/1");
+        });
+    };
+    ServiceProvider.prototype.getUsers = function () {
+        var url = 'http://127.0.0.1:1000/api/student/1';
+        return this.http.get(url);
+    };
+    ServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+    ], ServiceProvider);
+    return ServiceProvider;
+}());
+
+//# sourceMappingURL=service.js.map
+
+/***/ }),
+
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(227);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -309,7 +390,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 224:
+/***/ 227:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -317,21 +398,24 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_assignments_assignments__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_myprofile_myprofile__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_courses_courses__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_feedbacks_feedbacks__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_importantdates_importantdates__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_assignments_assignments__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_myprofile_myprofile__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_courses_courses__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_feedbacks_feedbacks__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_importantdates_importantdates__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_service_service__ = __webpack_require__(160);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -346,25 +430,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
                 //ListPage,
                 //LoginPage,
-                __WEBPACK_IMPORTED_MODULE_8__pages_myprofile_myprofile__["a" /* MyprofilePage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_courses_courses__["a" /* CoursesPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_assignments_assignments__["a" /* AssignmentsPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_feedbacks_feedbacks__["a" /* FeedbacksPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_importantdates_importantdates__["a" /* ImportantdatesPage */]
+                __WEBPACK_IMPORTED_MODULE_9__pages_myprofile_myprofile__["a" /* MyprofilePage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_courses_courses__["a" /* CoursesPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_assignments_assignments__["a" /* AssignmentsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_feedbacks_feedbacks__["a" /* FeedbacksPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_importantdates_importantdates__["a" /* ImportantdatesPage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/assignments/assignments.module#AssignmentsPageModule', name: 'AssignmentsPage', segment: 'assignments', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/courses/courses.module#CoursesPageModule', name: 'CoursesPage', segment: 'courses', priority: 'low', defaultHistory: [] },
@@ -373,26 +458,29 @@ var AppModule = (function () {
                         { loadChildren: '../pages/importantdates/importantdates.module#ImportantdatesPageModule', name: 'ImportantdatesPage', segment: 'importantdates', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/myresults/myresults.module#MyresultsPageModule', name: 'MyresultsPage', segment: 'myresults', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/myselfassessments/myselfassessments.module#MyselfassessmentsPageModule', name: 'MyselfassessmentsPage', segment: 'myselfassessments', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
                 //ListPage,
                 //LoginPage,
-                __WEBPACK_IMPORTED_MODULE_8__pages_myprofile_myprofile__["a" /* MyprofilePage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_courses_courses__["a" /* CoursesPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_assignments_assignments__["a" /* AssignmentsPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_feedbacks_feedbacks__["a" /* FeedbacksPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_importantdates_importantdates__["a" /* ImportantdatesPage */]
+                __WEBPACK_IMPORTED_MODULE_9__pages_myprofile_myprofile__["a" /* MyprofilePage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_courses_courses__["a" /* CoursesPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_assignments_assignments__["a" /* AssignmentsPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_feedbacks_feedbacks__["a" /* FeedbacksPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_importantdates_importantdates__["a" /* ImportantdatesPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+                __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__["a" /* SplashScreen */],
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] },
+                __WEBPACK_IMPORTED_MODULE_13__providers_service_service__["a" /* ServiceProvider */]
             ]
         })
     ], AppModule);
@@ -403,15 +491,15 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 267:
+/***/ 274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_assignments_assignments__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_myprofile_myprofile__ = __webpack_require__(104);
@@ -540,5 +628,5 @@ var AssignmentsPage = (function () {
 
 /***/ })
 
-},[200]);
+},[205]);
 //# sourceMappingURL=main.js.map
