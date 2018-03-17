@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -14,6 +15,7 @@ import {MyprofilePage} from "../pages/myprofile/myprofile";
 import {CoursesPage} from "../pages/courses/courses";
 import {FeedbacksPage} from "../pages/feedbacks/feedbacks";
 import {ImportantdatesPage} from "../pages/importantdates/importantdates";
+import { ServiceProvider } from '../providers/service/service';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import {ImportantdatesPage} from "../pages/importantdates/importantdates";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -46,7 +49,8 @@ import {ImportantdatesPage} from "../pages/importantdates/importantdates";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ServiceProvider
   ]
 })
 export class AppModule {}
