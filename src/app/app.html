@@ -5,37 +5,85 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content class="menu-content">
+      <ion-card text-center class="hide-card" style="background-color: #f4f4f4">
+          <img src="/assets/imgs/myprofile_icon.jpg" class="custom-avatar"/>
+          <h3>Full name</h3>
+          <p>Occupation</p>
+          <hr>
+      </ion-card>
     <ion-list>
       <!--
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
       -->
-       <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.homePage)">
-        <ion-icon md="md-home"></ion-icon>
-        Start
+
+        <ion-item menuClose (click)="nav.setRoot(pages2.homePage)">
+            <ion-icon name="ios-home" item-start></ion-icon>
+            Start
+            <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item menuClose (click)="nav.setRoot(pages2.profilePage)">
+            <ion-icon name="md-person" item-start></ion-icon>
+            Min profil
+            <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item menuClose (click)="nav.setRoot(pages2.coursePage)">
+            <ion-icon name="md-book" item-start></ion-icon>
+            Kurser
+            <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item menuClose (click)="nav.setRoot(pages2.assignmentPage)">
+            <ion-icon name="md-bookmarks" item-start></ion-icon>
+            Uppgifter
+            <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item menuClose (click)="nav.setRoot(pages2.feedbackPage)">
+            <ion-icon name="md-happy" item-start></ion-icon>
+            Återkoppling
+            <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item menuClose (click)="nav.setRoot(pages2.importantPage)">
+            <ion-icon name="calendar" item-start></ion-icon>
+            Viktiga Datum
+            <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item menuClose (click)="nav.setRoot(pages2.aboutPage)">
+            <ion-icon name="md-information-circle" item-start></ion-icon>
+            About
+            <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </ion-item>
+
+        <!-- <button ion-item menuClose icon-left (click)="nav.setRoot(pages2.aboutPage)">
+          <ion-icon md="md-home"></ion-icon>
+          Start
+        </button>
+    <!--<button color="sidemenu_top" menuClose ion-item icon-left (click)="nav.setRoot(pages2.profilePage)">
+          <ion-icon md="md-person"></ion-icon>
+          Min profil
+        </button>
+        <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.coursePage)">
+          <ion-icon md="md-book"></ion-icon>
+          Kurser
+        </button>
+        <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.assignmentPage)">
+          <ion-icon md="md-bookmarks"></ion-icon>
+          Uppgifter
+        </button>
+        <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.feedbackPage)">
+        <ion-icon md="md-happy"></ion-icon>
+          Återkoppling
       </button>
-      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.profilePage)">
-        <ion-icon md="md-person"></ion-icon>
-        Min profil
-      </button>
-      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.coursePage)">
-        <ion-icon md="md-book"></ion-icon>
-        Kurser
-      </button>
-      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.assignmentPage)">
-        <ion-icon md="md-bookmarks"></ion-icon>
-        Uppgifter
-      </button>
-      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.feedbackPage)">
-      <ion-icon md="md-happy"></ion-icon>
-        Återkoppling
-    </button>
-      <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.importantPage)">
+        <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.importantPage)">
         <ion-icon name="calendar"></ion-icon>
         Viktiga Datum
       </button>
+        <button menuClose ion-item icon-left (click)="nav.setRoot(pages2.aboutPage)">
+          <ion-icon name="md-information-circle"></ion-icon>
+          About
+        </button>
+        -->
     </ion-list>
   </ion-content>
 
@@ -43,3 +91,4 @@
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+

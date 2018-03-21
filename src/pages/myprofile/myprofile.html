@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header xmlns="http://www.w3.org/1999/html">
 
   <ion-navbar>
     <button ion-button menuToggle>
@@ -19,20 +19,55 @@
 <ion-content padding>
     <!-- dimensions set using attributes -->
     <div text-center>
-        <ion-img width="120" height="120" src="/img/myprofile_icon.jpg"></ion-img>
+        <ion-img align="center" width="120" height="120" src="/assets/imgs/myprofile_icon.jpg"></ion-img>
     </div>
-    <h5 ion-text color="danger" text-center>{{users.student_id}}</h5>
+    <h5 ion-text color="danger" text-center> Full name</h5>
     <ion-toolbar>
         <ion-title>Personuppgifter</ion-title>
     </ion-toolbar>
 
   <ion-list>
-      <ion-item name="fullname"> <ion-icon md="md-person"> </ion-icon> Full name</ion-item>
-      <ion-item name="email"> <ion-icon md="md-mail"> </ion-icon> Email</ion-item>
-      <ion-item name="telephone"> <ion-icon md="md-call"> </ion-icon> Telephone</ion-item>
-      <ion-item name="cityname"> <ion-icon md="md-globe"> </ion-icon> City name</ion-item>
-      <ion-item name="school_name"> <ion-icon md="md-home"> </ion-icon> School name</ion-item>
+      <ion-item name="fullname">
+          <ion-icon md="md-person" item-start> </ion-icon> Full name
+      </ion-item>
+      <ion-item name="email"> <ion-icon md="md-mail" item-start> </ion-icon> Email</ion-item>
+      <ion-item name="telephone"> <ion-icon md="md-call" item-start> </ion-icon> Telephone</ion-item>
+      <ion-item name="cityname"> <ion-icon md="md-globe" item-start> </ion-icon> City name</ion-item>
+      <ion-item name="school_name"> <ion-icon md="md-home" item-start> </ion-icon> School name</ion-item>
+      <ion-item name="workplace_tools">
+          <strong> Workplace tools: </strong> text here!
+      </ion-item>
+      <ion-item name="teaching_grade">
+          <strong> Teaching Grade: </strong> text here!
+      </ion-item>
+      <ion-item name="work_methods">
+          <strong>
+              Work methods:
+          </strong> text here!
+      </ion-item>
+      <ion-item name="subjects">
+          <strong>Subjects: </strong> text here!
+      </ion-item>
+      <ion-item name="years_as_teacher">
+          <strong>Years as teacher: </strong> text here!
+      </ion-item>
+      <ion-item name="technical_support">
+          <strong>
+              Technical upport:
+          </strong>  text here!
+      </ion-item>
+      <ion-item name="student_to_student_feedback">
+          <strong>
+              Student to Student feedback:
+          </strong> text here!
+      </ion-item>
+      <ion-item name="technology_use_in_teaching">
+          <strong>
+              Technology use in teaching
+          </strong> text here!
+      </ion-item>
   </ion-list>
-    <button (click)="navToMyResults()" ion-button color="danger">My Results</button>
-    <button (click)="navToSelfAssessments()" ion-button color="danger">Self-Assessments</button>
+    <button (click)="navToMyResults()" ion-button color="primary_color">My Results</button>
+    <button (click)="navToSelfAssessments()" ion-button color="primary_color">Self-Assessments</button>
+    <button (click)="navToEditProfile()" ion-button color="primary_color">Edit Profile</button>
 </ion-content>

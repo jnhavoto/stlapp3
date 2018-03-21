@@ -36,6 +36,10 @@ export class MyprofilePage {
         this.navCtrl.push('MyselfassessmentsPage');
         console.log('navigating within same module');
     }
+    navToEditProfile() {
+        this.navCtrl.push('EditprofilePage');
+        console.log('navigating within same module');
+    }
 
     getUser() {
 

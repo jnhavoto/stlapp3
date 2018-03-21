@@ -17,6 +17,7 @@ import {CoursesPage} from "../pages/courses/courses";
 import {FeedbacksPage} from "../pages/feedbacks/feedbacks";
 import {ImportantdatesPage} from "../pages/importantdates/importantdates";
 import { ServiceProvider } from '../providers/service/service';
+import {AboutPage} from "../pages/about/about";
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ServiceProvider } from '../providers/service/service';
       CoursesPage,
       AssignmentsPage,
       FeedbacksPage,
-      ImportantdatesPage
+      ImportantdatesPage,
+      AboutPage,
   ],
   imports: [
     BrowserModule,HttpClientModule,
@@ -45,7 +47,8 @@ import { ServiceProvider } from '../providers/service/service';
       CoursesPage,
       AssignmentsPage,
       FeedbacksPage,
-      ImportantdatesPage
+      ImportantdatesPage,
+      AboutPage,
   ],
   providers: [
     StatusBar,
