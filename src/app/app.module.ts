@@ -16,8 +16,10 @@ import {MyprofilePage} from "../pages/myprofile/myprofile";
 import {CoursesPage} from "../pages/courses/courses";
 import {FeedbacksPage} from "../pages/feedbacks/feedbacks";
 import {ImportantdatesPage} from "../pages/importantdates/importantdates";
-import { ServiceProvider } from '../providers/service/service';
+import {ServiceProvider } from '../providers/service/service';
 import {AboutPage} from "../pages/about/about";
+import {LoginPage} from "../pages/login/login";
+import {WelcomePage} from "../pages/welcome/welcome";
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import {AboutPage} from "../pages/about/about";
       FeedbacksPage,
       ImportantdatesPage,
       AboutPage,
+      LoginPage,
+      WelcomePage,
   ],
   imports: [
     BrowserModule,HttpClientModule,
@@ -41,14 +45,14 @@ import {AboutPage} from "../pages/about/about";
   entryComponents: [
       MyApp,
       HomePage,
-      //ListPage,
-      //LoginPage,
       MyprofilePage,
       CoursesPage,
       AssignmentsPage,
       FeedbacksPage,
       ImportantdatesPage,
       AboutPage,
+      LoginPage,
+      WelcomePage,
   ],
   providers: [
     StatusBar,

@@ -2,12 +2,17 @@ $font-path: "../assets/fonts";
 $app-direction: ltr;
 @import "ionic.globals";
 $colors: (
-  primary: #b3e3ff,
-  secondary: #a2db90,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  //primary: #b3e3ff,
+        primary: #ff6600,
+        secondary: #a2db90,
+        lightprimary:    #B5B5B7,
+        danger:     #f53d3d,
+        light:      #f4f4f4,
+        dark:       #222,
+        energy: #f2b632
 );
+
+$toolbar-background: color($colors, primary);
 
 @import "ionic.theme.default";
 

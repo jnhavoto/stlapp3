@@ -1,6 +1,6 @@
 {
   "name": "stlapp3",
-  "app_id": "",
+  "app_id": "4c5d3e41",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

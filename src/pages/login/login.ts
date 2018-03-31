@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {HomePage} from "../home/home";
 
 /**
  * Generated class for the LoginPage page.
@@ -23,6 +24,10 @@ export class LoginPage {
   }
   */
     doLogin() {
-        this.navCtrl.setRoot('MenuPage');
+        this.navCtrl.setRoot(HomePage);
+    }
+    login(){
+        // Your app login API web service call triggers
+        this.navCtrl.push(HomePage, {}, {animate: false});
     }
 }
