@@ -13,6 +13,7 @@ import {FeedbacksPage} from "../pages/feedbacks/feedbacks";
 import {ImportantdatesPage} from "../pages/importantdates/importantdates";
 import {AboutPage} from "../pages/about/about";
 import {WelcomePage} from "../pages/welcome/welcome";
+import {LoginPage} from "../pages/login/login";
 
 @Component({
   templateUrl: 'app.html'
@@ -38,6 +39,7 @@ export class MyApp {
         {title:'Feedbacks',component: FeedbacksPage},
         {title:'Important Dates',component: AssignmentsPage},
         {title:'About',component: AboutPage},
+        {title:'Logout',component: LoginPage}
     ];
     this.pages2={
         homePage: HomePage,
@@ -47,6 +49,7 @@ export class MyApp {
         feedbackPage: FeedbacksPage,
         importantPage: ImportantdatesPage,
         aboutPage: AboutPage,
+        loginPage: LoginPage,
     }
 
   }

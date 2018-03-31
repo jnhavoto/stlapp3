@@ -54,7 +54,10 @@
             About
             <ion-icon name="ios-arrow-forward" item-end></ion-icon>
         </ion-item>
-
+        <ion-item menuClose (click)="nav.setRoot(pages2.loginPage)">
+            <ion-icon name="md-power" item-start></ion-icon>
+            Logout
+        </ion-item>
         <!-- <button ion-item menuClose icon-left (click)="nav.setRoot(pages2.aboutPage)">
           <ion-icon md="md-home"></ion-icon>
           Start
