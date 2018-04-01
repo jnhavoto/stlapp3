@@ -20,11 +20,8 @@ import {ServiceProvider } from '../providers/service/service';
 import {AboutPage} from "../pages/about/about";
 import {LoginPage} from "../pages/login/login";
 import {WelcomePage} from "../pages/welcome/welcome";
-<<<<<<< HEAD
 import { AuthenticationProvider } from '../providers/authentication/authentication';
-=======
 import {MessagesPage} from "../pages/messages/messages";
->>>>>>> cd543c3bbc6b6acbc2c351901a17a1a4a2f7f4e5
 
 
 @NgModule({
