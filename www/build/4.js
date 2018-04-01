@@ -1,14 +1,23 @@
 webpackJsonp([4],{
 
+<<<<<<< HEAD
 /***/ 291:
+=======
+/***/ 301:
+>>>>>>> cd543c3bbc6b6acbc2c351901a17a1a4a2f7f4e5
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AssignmentDescriptionPageModule", function() { return AssignmentDescriptionPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyresultsPageModule", function() { return MyresultsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assignment_description__ = __webpack_require__(302);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__myresults__ = __webpack_require__(312);
+>>>>>>> cd543c3bbc6b6acbc2c351901a17a1a4a2f7f4e5
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +27,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AssignmentDescriptionPageModule = (function () {
-    function AssignmentDescriptionPageModule() {
+var MyresultsPageModule = (function () {
+    function MyresultsPageModule() {
     }
-    AssignmentDescriptionPageModule = __decorate([
+    MyresultsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__assignment_description__["a" /* AssignmentDescriptionPage */],
+                __WEBPACK_IMPORTED_MODULE_2__myresults__["a" /* MyresultsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__assignment_description__["a" /* AssignmentDescriptionPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__myresults__["a" /* MyresultsPage */]),
             ],
         })
-    ], AssignmentDescriptionPageModule);
-    return AssignmentDescriptionPageModule;
+    ], MyresultsPageModule);
+    return MyresultsPageModule;
 }());
 
-//# sourceMappingURL=assignment-description.module.js.map
+//# sourceMappingURL=myresults.module.js.map
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 302:
+=======
+/***/ 312:
+>>>>>>> cd543c3bbc6b6acbc2c351901a17a1a4a2f7f4e5
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AssignmentDescriptionPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyresultsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,29 +70,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the AssignmentDescriptionPage page.
+ * Generated class for the MyresultsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var AssignmentDescriptionPage = (function () {
-    function AssignmentDescriptionPage(navCtrl, navParams) {
+var MyresultsPage = (function () {
+    function MyresultsPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    AssignmentDescriptionPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AssignmentDescriptionPage');
+    MyresultsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MyresultsPage');
     };
-    AssignmentDescriptionPage = __decorate([
+    MyresultsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+<<<<<<< HEAD
             selector: 'page-assignment-description',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\assignment-description\assignment-description.html"*/'<!--\n\n  Generated template for the AssignmentDescriptionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>assignment_description</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\assignment-description\assignment-description.html"*/,
+=======
+            selector: 'page-myresults',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\myresults\myresults.html"*/'<!--\n  Generated template for the MyresultsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Mina Resultat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\myresults\myresults.html"*/,
+>>>>>>> cd543c3bbc6b6acbc2c351901a17a1a4a2f7f4e5
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], AssignmentDescriptionPage);
-    return AssignmentDescriptionPage;
+    ], MyresultsPage);
+    return MyresultsPage;
 }());
 
-//# sourceMappingURL=assignment-description.js.map
+//# sourceMappingURL=myresults.js.map
 
 /***/ })
 

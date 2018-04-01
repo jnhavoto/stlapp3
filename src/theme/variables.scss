@@ -24,9 +24,16 @@ $toolbar-wp-background: color($colors, primary);
 $list-md-background-color: color($colors, secondary);
 $list-md-text-color: color($colors, dark);
 
+
+ion-card-header {
+  background-color: color($colors, secondary);
+}
+
 $sidemnu_top: #ff6600;
 $sidemenu_bottom: #ff9068;
 $primary_color: #b3e3ff;
+
+$text-input-placeholder-color: #fff;
 
 /*$positive: #FF6600;
 $SIDEMENU_TOP: #ff6600;
