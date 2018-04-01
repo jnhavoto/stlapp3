@@ -20,6 +20,7 @@ import {ServiceProvider } from '../providers/service/service';
 import {AboutPage} from "../pages/about/about";
 import {LoginPage} from "../pages/login/login";
 import {WelcomePage} from "../pages/welcome/welcome";
+import { AuthenticationProvider } from '../providers/authentication/authentication';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import {WelcomePage} from "../pages/welcome/welcome";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ServiceProvider
+    ServiceProvider,
+    AuthenticationProvider
   ]
 })
 export class AppModule {}
