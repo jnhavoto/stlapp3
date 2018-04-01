@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 297:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyresultsPageModule", function() { return MyresultsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentmessagePageModule", function() { return StudentmessagePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__myresults__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__studentmessage__ = __webpack_require__(314);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MyresultsPageModule = (function () {
-    function MyresultsPageModule() {
+var StudentmessagePageModule = (function () {
+    function StudentmessagePageModule() {
     }
-    MyresultsPageModule = __decorate([
+    StudentmessagePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__myresults__["a" /* MyresultsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__studentmessage__["a" /* StudentmessagePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__myresults__["a" /* MyresultsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__studentmessage__["a" /* StudentmessagePage */]),
             ],
         })
-    ], MyresultsPageModule);
-    return MyresultsPageModule;
+    ], StudentmessagePageModule);
+    return StudentmessagePageModule;
 }());
 
-//# sourceMappingURL=myresults.module.js.map
+//# sourceMappingURL=studentmessage.module.js.map
 
 /***/ }),
 
-/***/ 303:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyresultsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StudentmessagePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the MyresultsPage page.
+ * Generated class for the StudentmessagePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var MyresultsPage = (function () {
-    function MyresultsPage(navCtrl, navParams) {
+var StudentmessagePage = (function () {
+    function StudentmessagePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    MyresultsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MyresultsPage');
+    StudentmessagePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad StudentmessagePage');
     };
-    MyresultsPage = __decorate([
+    StudentmessagePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-myresults',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\myresults\myresults.html"*/'<!--\n  Generated template for the MyresultsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Mina Resultat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\myresults\myresults.html"*/,
+            selector: 'page-studentmessage',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\studentmessage\studentmessage.html"*/'<!--\n  Generated template for the StudentmessagePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>studentmessage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\studentmessage\studentmessage.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], MyresultsPage);
-    return MyresultsPage;
+    ], StudentmessagePage);
+    return StudentmessagePage;
 }());
 
-//# sourceMappingURL=myresults.js.map
+//# sourceMappingURL=studentmessage.js.map
 
 /***/ })
 

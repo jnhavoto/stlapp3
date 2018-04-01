@@ -7,10 +7,6 @@
   background-color: #ff6600 !important;
 }
 
-#teste{
-  background-color: #ff6600 !important;
-}
-
 .home{
 backround: color($colors, primary);
   color:color($colors, light);
@@ -31,7 +27,14 @@ backround: color($colors, primary);
   margin-right: auto;
   //color: color($colors, light);
 }
-/*.toolbar-title {
-  text-align: center;
+
+.ion-card {
+  background-color: color($colors,secondary);
 }
-*/
+
+//$list-ios-background-color: color($colors, secondary);
+
+.item-ios
+{
+  background-color: color($colors,secondary);
+}

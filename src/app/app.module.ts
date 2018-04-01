@@ -20,6 +20,7 @@ import {ServiceProvider } from '../providers/service/service';
 import {AboutPage} from "../pages/about/about";
 import {LoginPage} from "../pages/login/login";
 import {WelcomePage} from "../pages/welcome/welcome";
+import {MessagesPage} from "../pages/messages/messages";
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import {WelcomePage} from "../pages/welcome/welcome";
       AboutPage,
       LoginPage,
       WelcomePage,
+      MessagesPage,
   ],
   imports: [
     BrowserModule,HttpClientModule,
@@ -53,6 +55,7 @@ import {WelcomePage} from "../pages/welcome/welcome";
       AboutPage,
       LoginPage,
       WelcomePage,
+      MessagesPage,
   ],
   providers: [
     StatusBar,

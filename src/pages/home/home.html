@@ -32,26 +32,38 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-toolbar>
-    <ion-title>Meddelanden</ion-title>
-  </ion-toolbar>
-  <ion-list>
-    <ion-item>
+  <ion-card>
+    <ion-card-header>
+      Meddelanden
+    </ion-card-header>
+    <ion-list>
+      <button ion-item>
+        <ion-avatar item-start>
+          <img src="/assets/imgs/myprofile_icon.jpg">
+        </ion-avatar>
+        <h2>Student name</h2>
+        <p>The short version of the meassage goes here</p>
+      </button>
+    </ion-list>
+    <ion-list>
+    <button ion-item>
       <ion-avatar item-start>
         <img src="/assets/imgs/myprofile_icon.jpg">
       </ion-avatar>
       <h2>Student name</h2>
-      <p>the meassage goes here</p>
-    </ion-item>
+      <p>The short version of the meassage goes here</p>
+    </button>
   </ion-list>
-  <ion-list>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="/assets/imgs/myprofile_icon.jpg">
-      </ion-avatar>
-      <h2>Student name</h2>
-      <p>the meassage goes here</p>
-    </ion-item>
-  </ion-list>
-  <button ion-button color="primary" (click)="logout()">Logout</button>
+    <ion-list>
+      <button ion-item>
+        <ion-avatar item-start>
+          <img src="/assets/imgs/myprofile_icon.jpg">
+        </ion-avatar>
+        <h2>Instructor name</h2>
+        <p>The short version of the meassage goes here</p>
+      </button>
+    </ion-list>
+  </ion-card>
+
+
 </ion-content>
