@@ -27,7 +27,7 @@ var MyselfassessmentsPageModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2__myselfassessments__["a" /* MyselfassessmentsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__myselfassessments__["a" /* MyselfassessmentsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__myselfassessments__["a" /* MyselfassessmentsPage */]),
             ],
         })
     ], MyselfassessmentsPageModule);
@@ -72,9 +72,9 @@ var MyselfassessmentsPage = (function () {
     };
     MyselfassessmentsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-myselfassessments',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/'<!--\n\n  Generated template for the MyselfassessmentsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Självbedömning</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/,
+            selector: 'page-myselfassessments',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/'<!--\n  Generated template for the MyselfassessmentsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Självbedömning</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], MyselfassessmentsPage);
     return MyselfassessmentsPage;
 }());

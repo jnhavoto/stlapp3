@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {HomePage} from "../home/home";
+import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AuthenticationProvider} from "../../providers/authentication/authentication";
 import {HttpClient} from "@angular/common/http";
+import {HomePage} from "../home/home";
 
 /**
  * Generated class for the LoginPage page.
@@ -21,10 +21,11 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public client: HttpClient,
-              private authentication : AuthenticationProvider) {
+              private authentication : AuthenticationProvider,
+              public alertCtrl: AlertController) {
   }
 
-    email:string = "anita.lundkvist@upplands-bro.se";
+    email:string = "anna.blohm@kalmar.se";
     password:string = "12345";
 
     user = {
@@ -38,25 +39,35 @@ export class LoginPage {
         this.user.email = this.email;
         this.user.password = this.password;
 
-        console.log(this.auth());
-
+        // console.log(this.auth());
+        this.auth();
     }
 
     auth() {
 
         return this.authentication.login(this.user).subscribe(
             data => {
-                this.authUser =  data.user[0];
-                return this.authUser;
-                // resolveDep(this.authUser);
-                // console.log(this.authUser);
+
+                 console.log(data);
+
+                 this.navCtrl.setRoot(HomePage);
             },
             error2 => {
                 console.log(error2)
+                this.showAlert();
             }
         )
 
         // console.log(this.authUser);
+    }
+
+    showAlert() {
+        let alert = this.alertCtrl.create({
+            title: 'Login Faild!',
+            subTitle: 'Email or Password wrong',
+            buttons: ['OK']
+        });
+        alert.present();
     }
 
 

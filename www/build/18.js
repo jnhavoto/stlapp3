@@ -27,7 +27,7 @@ var AssignmentsPageModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2__assignments__["a" /* AssignmentsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__assignments__["a" /* AssignmentsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__assignments__["a" /* AssignmentsPage */]),
             ],
         })
     ], AssignmentsPageModule);
