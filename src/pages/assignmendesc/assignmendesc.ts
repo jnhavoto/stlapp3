@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the AssignmentdesPage page.
+ * Generated class for the AssignmendescPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-assignmentdes',
-  templateUrl: 'assignmentdes.html',
+  selector: 'page-assignmendesc',
+  templateUrl: 'assignmendesc.html',
 })
-export class AssignmentdesPage {
+export class AssignmendescPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AssignmentdesPage');
+    console.log('ionViewDidLoad AssignmendescPage');
   }
 
 }

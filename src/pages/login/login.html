@@ -16,23 +16,19 @@
 <ion-content text-center class="backgroundcolor" id="image--background">
 
 <img height="100px" width="100px" src="../../assets/imgs/person.png">
-
     <div>
         <h3>Login to your STL App</h3>
     </div>
-
-  <ion-list color="bluecolor">
-
-    <ion-item color="bluecolor">
-      <ion-label color="dark" fixed>Username</ion-label>
-      <ion-input color="bluecolor" type="text" [(ngModel)]="email"></ion-input>
-    </ion-item>
-
-    <ion-item color="bluecolor">
-      <ion-label color="dark" fixed>Password</ion-label>
-      <ion-input type="password" [(ngModel)]="password"></ion-input>
-    </ion-item>
-  </ion-list>
+    <ion-list class="custom">
+        <ion-item>
+          <ion-label color="dark" fixed>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="dark" fixed>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+    </ion-list>
 
   <button ion-button full (click)="doLogin()">Login</button>
 

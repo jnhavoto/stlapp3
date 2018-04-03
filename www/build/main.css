@@ -36520,6 +36520,22 @@ page-assignments ion-card-header {
   background-color: #87e4ff;
 }
 
+page-assignments .custom {
+  background-color: #3f4041 !important;
+  /* This sets the background color*/
+}
+
+page-assignments .custom .item {
+  border-top: 3px solid;
+  /*Top Border for each menu item*/
+  border-bottom: 2px solid;
+  /*Bottom border for each menu item*/
+  border-color: #ff6600;
+  /*Sets colors for top and bottom border*/
+  color: white;
+  /*Text color for each item*/
+}
+
 page-courses ion-card-header {
   background-color: #87e4ff;
 }
@@ -36530,17 +36546,18 @@ page-courses .custom {
 }
 
 page-courses .custom .item {
-  background-color: #3f4041;
-  border: 1px solid;
-  /*Removes all borders*/
-  border-top: 1px solid;
+  border-top: 3px solid;
   /*Top Border for each menu item*/
   border-bottom: 2px solid;
   /*Bottom border for each menu item*/
-  border-color: #666;
+  border-color: #ff6600;
   /*Sets colors for top and bottom border*/
   color: white;
   /*Text color for each item*/
+}
+
+page-home ion-card-header {
+  background-color: #87e4ff;
 }
 
 page-home .backgroundcolor {
@@ -36548,8 +36565,19 @@ page-home .backgroundcolor {
 }
 
 page-home .custom {
-  background-color: #87e4ff !important;
+  background-color: #3f4041 !important;
   /* This sets the background color*/
+}
+
+page-home .custom .item {
+  border-top: 3px solid;
+  /*Top Border for each menu item*/
+  border-bottom: 2px solid;
+  /*Bottom border for each menu item*/
+  border-color: #ff6600;
+  /*Sets colors for top and bottom border*/
+  color: white;
+  /*Text color for each item*/
 }
 
 page-login #image--background {
@@ -36578,8 +36606,43 @@ page-login button {
   margin-bottom: 100px;
 }
 
+page-login .custom {
+  background-color: #87e4ff !important;
+  /* This sets the background color*/
+}
+
+page-login .custom .item {
+  background-color: #87e4ff;
+  border: 0px solid;
+  /*Removes all borders*/
+  border-top: 0px solid;
+  /*Top Border for each menu item*/
+  border-bottom: 0px solid;
+  /*Bottom border for each menu item*/
+  border-color: #87e4ff;
+  /*Sets colors for top and bottom border*/
+  color: #222;
+  /*Text color for each item*/
+}
+
 page-messages ion-card-header {
   background-color: #87e4ff;
+}
+
+page-messages .custom {
+  background-color: #3f4041 !important;
+  /* This sets the background color*/
+}
+
+page-messages .custom .item {
+  border-top: 3px solid;
+  /*Top Border for each menu item*/
+  border-bottom: 2px solid;
+  /*Bottom border for each menu item*/
+  border-color: #ff6600;
+  /*Sets colors for top and bottom border*/
+  color: white;
+  /*Text color for each item*/
 }
 
 page-welcome #image--background {

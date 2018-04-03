@@ -79,7 +79,7 @@ var AssignmentsPage = (function () {
     };
     AssignmentsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-assignments',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\assignments\assignments.html"*/'<!--\n  Generated template for the AssignmentsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title align-items-center>Assignments</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-card>\n    <ion-card-header>\n      Ongoing (Pågående)\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n        <h2>Case name 1</h2>\n        <p>Deadline: </p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n  <ion-card-header>\n    Completed\n  </ion-card-header>\n  <ion-list>\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Case name 1</h2>\n      <p>Submitted on: </p>\n    </button>\n  </ion-list>\n  <ion-list>\n    <button ion-item>\n      <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n      <h2>Case name 2</h2>\n      <p>Submitted on: </p>\n    </button>\n  </ion-list>\n  <ion-list>\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Case name 3</h2>\n      <p>Submitted on: </p>\n    </button>\n  </ion-list>\n  </ion-card>\n\n  <ion-card>\n  <ion-card-header>\n    Upcoming\n  </ion-card-header>\n  <ion-list>\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Case name 1</h2>\n      <p>Start date: </p>\n    </button>\n  </ion-list>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\assignments\assignments.html"*/,
+            selector: 'page-assignments',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\assignments\assignments.html"*/'<!--\n  Generated template for the AssignmentsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title align-items-center>Assignments</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-card>\n    <ion-card-header>\n      Ongoing (Pågående)\n    </ion-card-header>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n        <h2>Case name 1</h2>\n        <p>Deadline: </p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n  <ion-card-header>\n    Completed\n  </ion-card-header>\n  <ion-list class="custom">\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Case name 1</h2>\n      <p>Submitted on: </p>\n    </button>\n  </ion-list>\n  <ion-list class="custom">\n    <button ion-item>\n      <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n      <h2>Case name 2</h2>\n      <p>Submitted on: </p>\n    </button>\n  </ion-list>\n  <ion-list class="custom">\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Case name 3</h2>\n      <p>Submitted on: </p>\n    </button>\n  </ion-list>\n  </ion-card>\n\n  <ion-card>\n  <ion-card-header>\n    Upcoming\n  </ion-card-header>\n  <ion-list class="custom">\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Case name 1</h2>\n      <p>Start date: </p>\n    </button>\n  </ion-list>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\assignments\assignments.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], AssignmentsPage);
@@ -124,7 +124,7 @@ var CoursesPage = (function () {
     };
     CoursesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-courses',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\courses\courses.html"*/'<!--\n  Generated template for the CoursesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Courses</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Ongoing (Pågående)\n    </ion-card-header>\n    <ion-list>\n    <button ion-item>\n      <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n      <h2>Course name 1</h2>\n      <p>Instructor names</p>\n    </button>\n  </ion-list>\n    <ion-list>\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name 2</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Completed (Avslutade)\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name 1</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n    <ion-list>\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name 2</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Upcoming (Kommande)\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\courses\courses.html"*/,
+            selector: 'page-courses',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\courses\courses.html"*/'<!--\n  Generated template for the CoursesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Courses</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Ongoing (Pågående)\n    </ion-card-header>\n    <ion-list class="custom">\n    <button ion-item>\n      <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n      <h2>Course name 1</h2>\n      <p>Instructor names</p>\n    </button>\n  </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name 2</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Completed (Avslutade)\n    </ion-card-header>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name 1</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name 2</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Upcoming (Kommande)\n    </ion-card-header>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n        <h2>Course name</h2>\n        <p>Instructor names</p>\n      </button>\n    </ion-list>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\courses\courses.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], CoursesPage);
@@ -259,7 +259,7 @@ var MessagesPage = (function () {
     };
     MessagesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-messages',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\messages\messages.html"*/'<!--\n  Generated template for the MessagesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    <ion-title align-items-center>Messages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Instructor\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n        <h2>Instructor name</h2>\n        <p>Short message </p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Students\n    </ion-card-header>\n    <ion-list>\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Student name</h2>\n      <p>Short message </p>\n    </button>\n  </ion-list>\n    <ion-list>\n      <button ion-item>\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n        <h2>Student name</h2>\n        <p>Short message </p>\n      </button>\n    </ion-list>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\messages\messages.html"*/,
+            selector: 'page-messages',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\messages\messages.html"*/'<!--\n  Generated template for the MessagesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    <ion-title align-items-center>Messages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Instructor\n    </ion-card-header>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n        <h2>Instructor name</h2>\n        <p>Short message </p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Students\n    </ion-card-header>\n    <ion-list class="custom">\n    <button ion-item>\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n      <h2>Student name</h2>\n      <p>Short message </p>\n    </button>\n  </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n        <h2>Student name</h2>\n        <p>Short message </p>\n      </button>\n    </ion-list>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\messages\messages.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], MessagesPage);
@@ -408,83 +408,79 @@ webpackEmptyAsyncContext.id = 122;
 var map = {
 	"../pages/about/about.module": [
 		288,
-		19
+		40
 	],
-	"../pages/assignment-description/assignment-description.module": [
-		297,
-		9
-	],
-	"../pages/assignmentdes/assignmentdes.module": [
-		289,
-		8
+	"../pages/assignmendesc/assignmendesc.module": [
+		320,
+		30
 	],
 	"../pages/assignments/assignments.module": [
-		290,
-		18
+		291,
+		39
 	],
 	"../pages/assignmentsub/assignmentsub.module": [
-		291,
-		7
+		293,
+		29
 	],
 	"../pages/courses/courses.module": [
 		292,
-		17
+		38
 	],
 	"../pages/editprofile/editprofile.module": [
-		293,
-		6
+		294,
+		28
 	],
 	"../pages/feedbacks/feedbacks.module": [
-		294,
-		16
+		295,
+		37
 	],
 	"../pages/home/home.module": [
 		296,
-		15
+		36
 	],
 	"../pages/importantdates/importantdates.module": [
-		295,
-		14
+		297,
+		35
 	],
 	"../pages/login/login.module": [
-		300,
-		13
+		299,
+		34
 	],
 	"../pages/menu/menu.module": [
 		298,
-		5
+		27
 	],
 	"../pages/messages/messages.module": [
-		299,
-		12
+		300,
+		33
 	],
 	"../pages/myprofile/myprofile.module": [
 		302,
-		11
+		32
 	],
 	"../pages/myresults/myresults.module": [
 		301,
-		4
+		26
 	],
 	"../pages/myselfassessments/myselfassessments.module": [
-		307,
-		3
+		306,
+		25
 	],
 	"../pages/selfassess/selfassess.module": [
 		303,
-		2
+		24
 	],
 	"../pages/studentmessage/studentmessage.module": [
 		304,
-		1
+		23
 	],
 	"../pages/teachermessage/teachermessage.module": [
-		306,
-		0
+		305,
+		22
 	],
 	"../pages/welcome/welcome.module": [
-		305,
-		10
+		307,
+		31
 	]
 };
 function webpackAsyncContext(req) {
@@ -687,25 +683,25 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/assignment-description/assignment-description.module#AssignmentDescriptionPageModule', name: 'AssignmentDescriptionPage', segment: 'assignment-description', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/assignmentdes/assignmentdes.module#AssignmentdesPageModule', name: 'AssignmentdesPage', segment: 'assignmentdes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/assignments/assignments.module#AssignmentsPageModule', name: 'AssignmentsPage', segment: 'assignments', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/assignmentsub/assignmentsub.module#AssignmentsubPageModule', name: 'AssignmentsubPage', segment: 'assignmentsub', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/courses/courses.module#CoursesPageModule', name: 'CoursesPage', segment: 'courses', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/assignmentsub/assignmentsub.module#AssignmentsubPageModule', name: 'AssignmentsubPage', segment: 'assignmentsub', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/editprofile/editprofile.module#EditprofilePageModule', name: 'EditprofilePage', segment: 'editprofile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/feedbacks/feedbacks.module#FeedbacksPageModule', name: 'FeedbacksPage', segment: 'feedbacks', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/importantdates/importantdates.module#ImportantdatesPageModule', name: 'ImportantdatesPage', segment: 'importantdates', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/assignment-description/assignment-description.module#AssignmentDescriptionPageModule', name: 'AssignmentDescriptionPage', segment: 'assignment-description', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/importantdates/importantdates.module#ImportantdatesPageModule', name: 'ImportantdatesPage', segment: 'importantdates', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/messages/messages.module#MessagesPageModule', name: 'MessagesPage', segment: 'messages', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/messages/messages.module#MessagesPageModule', name: 'MessagesPage', segment: 'messages', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/myresults/myresults.module#MyresultsPageModule', name: 'MyresultsPage', segment: 'myresults', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/selfassess/selfassess.module#SelfassessPageModule', name: 'SelfassessPage', segment: 'selfassess', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/studentmessage/studentmessage.module#StudentmessagePageModule', name: 'StudentmessagePage', segment: 'studentmessage', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/teachermessage/teachermessage.module#TeachermessagePageModule', name: 'TeachermessagePage', segment: 'teachermessage', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/myselfassessments/myselfassessments.module#MyselfassessmentsPageModule', name: 'MyselfassessmentsPage', segment: 'myselfassessments', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/myselfassessments/myselfassessments.module#MyselfassessmentsPageModule', name: 'MyselfassessmentsPage', segment: 'myselfassessments', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -916,7 +912,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>-->\n\n\n\n  <!--<ion-navbar>-->\n\n    <!--<ion-title>Login</ion-title>-->\n\n  <!--</ion-navbar>-->\n\n\n\n<!--</ion-header>-->\n\n\n\n\n\n<ion-content text-center class="backgroundcolor" id="image--background">\n\n\n\n<img height="100px" width="100px" src="../../assets/imgs/person.png">\n\n\n\n    <div>\n\n        <h3>Login to your STL App</h3>\n\n    </div>\n\n\n\n  <ion-list color="bluecolor">\n\n\n\n    <ion-item color="bluecolor">\n\n      <ion-label color="dark" fixed>Username</ion-label>\n\n      <ion-input color="bluecolor" type="text" [(ngModel)]="email"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item color="bluecolor">\n\n      <ion-label color="dark" fixed>Password</ion-label>\n\n      <ion-input type="password" [(ngModel)]="password"></ion-input>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <button ion-button full (click)="doLogin()">Login</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--<ion-header>-->\n\n\n\n  <!--<ion-navbar>-->\n\n    <!--<ion-title>Login</ion-title>-->\n\n  <!--</ion-navbar>-->\n\n\n\n<!--</ion-header>-->\n\n\n\n\n\n<ion-content text-center class="backgroundcolor" id="image--background">\n\n\n\n<img height="100px" width="100px" src="../../assets/imgs/person.png">\n\n    <div>\n\n        <h3>Login to your STL App</h3>\n\n    </div>\n\n    <ion-list class="custom">\n\n        <ion-item>\n\n          <ion-label color="dark" fixed>Username</ion-label>\n\n          <ion-input type="text" [(ngModel)]="email"></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-label color="dark" fixed>Password</ion-label>\n\n          <ion-input type="password" [(ngModel)]="password"></ion-input>\n\n        </ion-item>\n\n    </ion-list>\n\n\n\n  <button ion-button full (click)="doLogin()">Login</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
@@ -974,7 +970,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\home\home.html"*/'<!--\n  Generated template for the HomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <!--<img ion-right src="assets/imgs/stllogo.png" class="navbarLogo" />-->\n    <ion-title>Home</ion-title>\n    <ion-buttons end> <button ion-button> STL </button> </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home">\n    <ion-card>\n        <ion-card-header class="custom">\n            Påminnelser\n        </ion-card-header>\n        <ion-list>\n              <button ion-item>\n                  <ion-avatar item-start>\n                      <img src="/assets/imgs/myprofile_icon.jpg">\n                  </ion-avatar>\n                  <h2>Assignment case</h2>\n                  <p>Deadline: date</p>\n              </button>\n        </ion-list>\n    </ion-card>\n\n  <ion-card>\n    <ion-card-header class="custom">\n      Meddelanden\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-avatar item-start>\n          <img src="/assets/imgs/myprofile_icon.jpg">\n        </ion-avatar>\n        <h2>Student name</h2>\n        <p>The short version of the meassage goes here</p>\n      </button>\n    </ion-list>\n    <ion-list>\n    <button ion-item>\n      <ion-avatar item-start>\n        <img src="/assets/imgs/myprofile_icon.jpg">\n      </ion-avatar>\n      <h2>Student name</h2>\n      <p>The short version of the meassage goes here</p>\n    </button>\n  </ion-list>\n    <ion-list>\n      <button ion-item>\n        <ion-avatar item-start>\n          <img src="/assets/imgs/myprofile_icon.jpg">\n        </ion-avatar>\n        <h2>Instructor name</h2>\n        <p>The short version of the meassage goes here</p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\home\home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\home\home.html"*/'<!--\n  Generated template for the HomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <!--<img ion-right src="assets/imgs/stllogo.png" class="navbarLogo" />-->\n    <ion-title>Home</ion-title>\n    <ion-buttons end> <button ion-button> STL </button> </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home">\n    <ion-card>\n        <ion-card-header>\n            Påminnelser\n        </ion-card-header>\n        <ion-list class="custom">\n              <button ion-item>\n                  <ion-avatar item-start>\n                      <img src="/assets/imgs/myprofile_icon.jpg">\n                  </ion-avatar>\n                  <h2>Assignment case</h2>\n                  <p>Deadline: date</p>\n              </button>\n        </ion-list>\n    </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Meddelanden\n    </ion-card-header>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-avatar item-start>\n          <img src="/assets/imgs/myprofile_icon.jpg">\n        </ion-avatar>\n        <h2>Student name</h2>\n        <p>The short version of the meassage goes here</p>\n      </button>\n    </ion-list>\n    <ion-list class="custom">\n    <button ion-item>\n      <ion-avatar item-start>\n        <img src="/assets/imgs/myprofile_icon.jpg">\n      </ion-avatar>\n      <h2>Student name</h2>\n      <p>The short version of the meassage goes here</p>\n    </button>\n  </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-avatar item-start>\n          <img src="/assets/imgs/myprofile_icon.jpg">\n        </ion-avatar>\n        <h2>Instructor name</h2>\n        <p>The short version of the meassage goes here</p>\n      </button>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\home\home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
     ], HomePage);

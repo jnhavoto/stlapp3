@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 304:
+/***/ 306:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentmessagePageModule", function() { return StudentmessagePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyselfassessmentsPageModule", function() { return MyselfassessmentsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__studentmessage__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__myselfassessments__ = __webpack_require__(317);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var StudentmessagePageModule = (function () {
-    function StudentmessagePageModule() {
+var MyselfassessmentsPageModule = (function () {
+    function MyselfassessmentsPageModule() {
     }
-    StudentmessagePageModule = __decorate([
+    MyselfassessmentsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__studentmessage__["a" /* StudentmessagePage */],
+                __WEBPACK_IMPORTED_MODULE_2__myselfassessments__["a" /* MyselfassessmentsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__studentmessage__["a" /* StudentmessagePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__myselfassessments__["a" /* MyselfassessmentsPage */]),
             ],
         })
-    ], StudentmessagePageModule);
-    return StudentmessagePageModule;
+    ], MyselfassessmentsPageModule);
+    return MyselfassessmentsPageModule;
 }());
 
-//# sourceMappingURL=studentmessage.module.js.map
+//# sourceMappingURL=myselfassessments.module.js.map
 
 /***/ }),
 
-/***/ 315:
+/***/ 317:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StudentmessagePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyselfassessmentsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the StudentmessagePage page.
+ * Generated class for the MyselfassessmentsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var StudentmessagePage = (function () {
-    function StudentmessagePage(navCtrl, navParams) {
+var MyselfassessmentsPage = (function () {
+    function MyselfassessmentsPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    StudentmessagePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad StudentmessagePage');
+    MyselfassessmentsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MyselfassessmentsPage');
     };
-    StudentmessagePage = __decorate([
+    MyselfassessmentsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-studentmessage',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\studentmessage\studentmessage.html"*/'<!--\n  Generated template for the StudentmessagePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>studentmessage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\studentmessage\studentmessage.html"*/,
+            selector: 'page-myselfassessments',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/'<!--\n  Generated template for the MyselfassessmentsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Självbedömning</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], StudentmessagePage);
-    return StudentmessagePage;
+    ], MyselfassessmentsPage);
+    return MyselfassessmentsPage;
 }());
 
-//# sourceMappingURL=studentmessage.js.map
+//# sourceMappingURL=myselfassessments.js.map
 
 /***/ })
 
