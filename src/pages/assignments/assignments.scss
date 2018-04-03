@@ -2,4 +2,17 @@ page-assignments {
   ion-card-header{
     background-color: color($colors, bluecolor);
   }
+
+  .custom {
+    background-color: color($colors, darklight) !important; /* This sets the background color*/
+  }
+
+  .custom .item {
+    //background-color: color($colors, secondary);
+    //border: 2px solid;   /*Removes all borders*/
+    border-top: 3px solid;   /*Top Border for each menu item*/
+    border-bottom:2px solid;   /*Bottom border for each menu item*/
+    border-color: color($colors, primary);   /*Sets colors for top and bottom border*/
+    color: white;    /*Text color for each item*/
+  }
 }

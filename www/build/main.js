@@ -746,6 +746,8 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_welcome_welcome__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_messages_messages__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_assignmendesc_assignmendesc__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_assignmendesc_assignmendesc___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__pages_assignmendesc_assignmendesc__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -762,6 +764,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 //import { ListPage } from '../pages/list/list';
 //import {LoginPage} from "../pages/login/login";
+
 
 
 
@@ -789,7 +792,8 @@ var MyApp = (function () {
             { title: 'Important Dates', component: __WEBPACK_IMPORTED_MODULE_5__pages_assignments_assignments__["a" /* AssignmentsPage */] },
             { title: 'About', component: __WEBPACK_IMPORTED_MODULE_10__pages_about_about__["a" /* AboutPage */] },
             { title: 'Logout', component: __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */] },
-            { title: 'Messages', component: __WEBPACK_IMPORTED_MODULE_13__pages_messages_messages__["a" /* MessagesPage */] }
+            { title: 'Messages', component: __WEBPACK_IMPORTED_MODULE_13__pages_messages_messages__["a" /* MessagesPage */] },
+            { title: 'AssignmentDesc', component: __WEBPACK_IMPORTED_MODULE_14__pages_assignmendesc_assignmendesc__["AssignmendescPage"] },
         ];
         this.pages2 = {
             homePage: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
@@ -801,6 +805,7 @@ var MyApp = (function () {
             aboutPage: __WEBPACK_IMPORTED_MODULE_10__pages_about_about__["a" /* AboutPage */],
             loginPage: __WEBPACK_IMPORTED_MODULE_12__pages_login_login__["a" /* LoginPage */],
             messagesPage: __WEBPACK_IMPORTED_MODULE_13__pages_messages_messages__["a" /* MessagesPage */],
+            assignmentDescPage: __WEBPACK_IMPORTED_MODULE_14__pages_assignmendesc_assignmendesc__["AssignmendescPage"],
         };
     }
     MyApp.prototype.initializeApp = function () {
@@ -819,17 +824,25 @@ var MyApp = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]) === "function" && _a || Object)
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>STL</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content class="menu-content" class="custom">\n\n      <ion-card text-center class="hide-card" class="custom">\n\n          <img src="/assets/imgs/myprofile_icon.jpg" class="custom-avatar"/>\n\n          <h2>Full name</h2>\n\n      </ion-card>\n\n    <ion-list no-lines class="custom">\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.homePage)">\n\n            <ion-icon name="ios-home" item-start></ion-icon>\n\n            Start\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.profilePage)">\n\n            <ion-icon name="md-person" item-start></ion-icon>\n\n            Min profil\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.coursePage)">\n\n            <ion-icon name="md-book" item-start></ion-icon>\n\n            Kurser\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.assignmentPage)">\n\n            <ion-icon name="md-bookmarks" item-start></ion-icon>\n\n            Uppgifter\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.feedbackPage)">\n\n            <ion-icon name="md-happy" item-start></ion-icon>\n\n            Återkoppling\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.messagesPage)">\n\n            <ion-icon name="mail" item-start></ion-icon>\n\n            Messages\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.importantPage)">\n\n            <ion-icon name="calendar" item-start></ion-icon>\n\n            Viktiga Datum\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.aboutPage)">\n\n            <ion-icon name="md-information-circle" item-start></ion-icon>\n\n            About\n\n            <ion-icon name="ios-arrow-forward" item-end></ion-icon>\n\n        </ion-item>\n\n        <ion-item menuClose (click)="nav.setRoot(pages2.loginPage)">\n\n            <ion-icon name="md-power" item-start></ion-icon>\n\n            Logout\n\n        </ion-item>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object])
     ], MyApp);
     return MyApp;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 318:
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'D:\\life\\Ionic Projects\\stlapp3\\src\\pages\\assignmendesc\\assignmendesc.js'");
 
 /***/ }),
 

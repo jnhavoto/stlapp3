@@ -25,4 +25,17 @@ page-login {
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
+  .custom {
+    background-color: color($colors, bluecolor) !important; /* This sets the background color*/
+  }
+
+  .custom .item {
+    background-color: color($colors, bluecolor);
+    border: 0px solid;   /*Removes all borders*/
+    border-top: 0px solid;   /*Top Border for each menu item*/
+    border-bottom:0px solid;   /*Bottom border for each menu item*/
+    border-color: color($colors, bluecolor);   /*Sets colors for top and bottom border*/
+    color: color($colors, dark);    /*Text color for each item*/
+  }
 }

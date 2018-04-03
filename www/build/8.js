@@ -1,14 +1,22 @@
 webpackJsonp([8],{
 
+<<<<<<< HEAD
 /***/ 290:
+=======
+/***/ 292:
+>>>>>>> 69a904b416620ca32ce97cbbcee8e694e1b4eaa0
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AssignmentdesPageModule", function() { return AssignmentdesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoursesPageModule", function() { return CoursesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assignmentdes__ = __webpack_require__(309);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__courses__ = __webpack_require__(104);
+>>>>>>> 69a904b416620ca32ce97cbbcee8e694e1b4eaa0
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,22 +26,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AssignmentdesPageModule = (function () {
-    function AssignmentdesPageModule() {
+var CoursesPageModule = (function () {
+    function CoursesPageModule() {
     }
-    AssignmentdesPageModule = __decorate([
+    CoursesPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__assignmentdes__["a" /* AssignmentdesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__courses__["a" /* CoursesPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__assignmentdes__["a" /* AssignmentdesPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__courses__["a" /* CoursesPage */]),
             ],
         })
-    ], AssignmentdesPageModule);
-    return AssignmentdesPageModule;
+    ], CoursesPageModule);
+    return CoursesPageModule;
 }());
 
+<<<<<<< HEAD
+//# sourceMappingURL=courses.module.js.map
+=======
 //# sourceMappingURL=assignmentdes.module.js.map
 
 /***/ }),
@@ -80,6 +91,7 @@ var AssignmentdesPage = (function () {
 }());
 
 //# sourceMappingURL=assignmentdes.js.map
+>>>>>>> a10cb7a264cde6305b9d57849a99d77c19652f6c
 
 /***/ })
 

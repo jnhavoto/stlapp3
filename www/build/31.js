@@ -1,14 +1,25 @@
 webpackJsonp([31],{
 
+<<<<<<< HEAD
 /***/ 289:
+=======
+/***/ 307:
+>>>>>>> 69a904b416620ca32ce97cbbcee8e694e1b4eaa0
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+<<<<<<< HEAD
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AssignmentDescriptionPageModule", function() { return AssignmentDescriptionPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assignment_description__ = __webpack_require__(308);
+=======
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WelcomePageModule", function() { return WelcomePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome__ = __webpack_require__(109);
+>>>>>>> 69a904b416620ca32ce97cbbcee8e694e1b4eaa0
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,6 +29,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+<<<<<<< HEAD
 var AssignmentDescriptionPageModule = (function () {
     function AssignmentDescriptionPageModule() {
     }
@@ -80,6 +92,25 @@ var AssignmentDescriptionPage = (function () {
 }());
 
 //# sourceMappingURL=assignment-description.js.map
+=======
+var WelcomePageModule = (function () {
+    function WelcomePageModule() {
+    }
+    WelcomePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__welcome__["a" /* WelcomePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__welcome__["a" /* WelcomePage */]),
+            ],
+        })
+    ], WelcomePageModule);
+    return WelcomePageModule;
+}());
+
+//# sourceMappingURL=welcome.module.js.map
+>>>>>>> 69a904b416620ca32ce97cbbcee8e694e1b4eaa0
 
 /***/ })
 
