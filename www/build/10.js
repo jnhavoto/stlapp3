@@ -70,16 +70,13 @@ var AssigndetailsPage = (function () {
     AssigndetailsPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad AssigndetailsPage');
     };
-    AssigndetailsPage.prototype.navToAssignDetails = function () {
-    };
     AssigndetailsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-assigndetails',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\assigndetails\assigndetails.html"*/'<!--\n  Generated template for the AssigndetailsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Assignment Details</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    Details will come here!\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\assigndetails\assigndetails.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], AssigndetailsPage);
     return AssigndetailsPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=assigndetails.js.map

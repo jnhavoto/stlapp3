@@ -70,18 +70,13 @@ var AssignmendescPage = (function () {
     AssignmendescPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad AssignmendescPage');
     };
-    AssignmendescPage.prototype.navToAssignDetails = function () {
-        this.navCtrl.push('MyresultsPage');
-        console.log('Navigating to another module');
-    };
     AssignmendescPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-assignmendesc',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\assignmendesc\assignmendesc.html"*/'<!--\n  Generated template for the AssignmendescPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Asssignment</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-item>Assignment 4</ion-item>\n  <ion-card>\n    <ion-card-header>\n      Ongoing (Pågående)\n    </ion-card-header>\n    <ion-list class="custom">\n      <button ion-item (click)="navToAssignDetails()">\n        <ion-icon name="information-circle" item-start></ion-icon>\n        <h2>Se uppgift</h2>\n      </button>\n    </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon name="bookmarks" item-start></ion-icon>\n        <h2>Material</h2>\n      </button>\n    </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon name="megaphone" item-start></ion-icon>\n        <h2>Meddelanden</h2>\n      </button>\n    </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon name="people" item-start></ion-icon>\n        <h2>Din grupp</h2>\n      </button>\n    </ion-list>\n    <ion-list class="custom">\n      <button ion-item>\n        <ion-icon name="create" item-start></ion-icon>\n        <h2>Skicka uppgift</h2>\n      </button>\n    </ion-list>\n    <ion-list class="custom">\n      <button ion-item >\n        <ion-icon name="happy" item-start></ion-icon>\n        <h2>Återkoppling</h2>\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-item>\n    <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n    <h2>Skicka meddelande</h2>\n  </button>\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\assignmendesc\assignmendesc.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], AssignmendescPage);
     return AssignmendescPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=assignmendesc.js.map
