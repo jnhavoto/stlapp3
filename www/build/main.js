@@ -957,10 +957,6 @@ var HomePage = (function () {
         this.navParams = navParams;
         this.app = app;
         this.userAuth = { user: {} };
-        this.userdata = {
-            name: "teste",
-            email: ""
-        };
         this.test = "Claud Sumbus";
         this.userAuth = navParams.get("user");
     }

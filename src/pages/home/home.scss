@@ -2,5 +2,7 @@ page-home {
   .backgroundcolor{
     background-color: color($colors, secondary);
   }
-
+  .custom {
+    background-color: color($colors, bluecolor) !important; /* This sets the background color*/
+  }
 }
