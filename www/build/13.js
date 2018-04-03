@@ -1,6 +1,6 @@
 webpackJsonp([13],{
 
-/***/ 296:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29,6 +29,7 @@ var HomePageModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__home__["a" /* HomePage */]),
             ],
+            providers: [__WEBPACK_IMPORTED_MODULE_2__home__["a" /* HomePage */]]
         })
     ], HomePageModule);
     return HomePageModule;

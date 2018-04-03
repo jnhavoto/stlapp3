@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 import {IonicPage, NavController, NavParams, App} from 'ionic-angular';
 import {LoginPage} from "../login/login";
 import { MyprofilePage } from '../myprofile/myprofile';
@@ -15,6 +15,7 @@ import { MyprofilePage } from '../myprofile/myprofile';
     selector: 'page-home',
     templateUrl: 'home.html',
 })
+
 export class HomePage {
 
     public userAuth = {user: {}};

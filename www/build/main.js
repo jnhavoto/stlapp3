@@ -94,55 +94,6 @@ var AssignmendescPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AssignmentsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the AssignmentsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AssignmentsPage = (function () {
-    function AssignmentsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    AssignmentsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AssignmentsPage');
-    };
-    AssignmentsPage.prototype.navToAssignDetails = function () {
-        this.navCtrl.push('navToAssignDetails');
-        console.log('Navigating to another module');
-    };
-    AssignmentsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-assignments',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\assignments\assignments.html"*/'<!--\n\n  Generated template for the AssignmentsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title align-items-center>Assignments</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card>\n\n    <ion-card-header>\n\n      Ongoing (Pågående)\n\n    </ion-card-header>\n\n\n\n    <ion-list class="custom">\n\n<<<<<<< HEAD\n\n\n\n=======\n\n>>>>>>> ba61d59ad764102384659a30d633c6f5cf369700\n\n      <button ion-item (click)="navToAssignDetails()">\n\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n        <h2>Case name 1</h2>\n\n        <p>Deadline: </p>\n\n      </button>\n\n      \n\n    </ion-list>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n  <ion-card-header>\n\n    Completed\n\n  </ion-card-header>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n      <h2>Case name 1</h2>\n\n      <p>Submitted on: </p>\n\n    </button>\n\n  </ion-list>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n\n      <h2>Case name 2</h2>\n\n      <p>Submitted on: </p>\n\n    </button>\n\n  </ion-list>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n      <h2>Case name 3</h2>\n\n      <p>Submitted on: </p>\n\n    </button>\n\n  </ion-list>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n  <ion-card-header>\n\n    Upcoming\n\n  </ion-card-header>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n      <h2>Case name 1</h2>\n\n      <p>Start date: </p>\n\n    </button>\n\n  </ion-list>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\assignments\assignments.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], AssignmentsPage);
-    return AssignmentsPage;
-}());
-
-//# sourceMappingURL=assignments.js.map
-
-/***/ }),
-
-/***/ 105:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoursesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
@@ -184,7 +135,7 @@ var CoursesPage = (function () {
 
 /***/ }),
 
-/***/ 106:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -229,7 +180,7 @@ var FeedbacksPage = (function () {
 
 /***/ }),
 
-/***/ 107:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -271,6 +222,55 @@ var ImportantdatesPage = (function () {
 }());
 
 //# sourceMappingURL=importantdates.js.map
+
+/***/ }),
+
+/***/ 107:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AssignmentsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AssignmentsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AssignmentsPage = (function () {
+    function AssignmentsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AssignmentsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AssignmentsPage');
+    };
+    AssignmentsPage.prototype.navToAssignDetails = function () {
+        this.navCtrl.push('navToAssignDetails');
+        console.log('Navigating to another module');
+    };
+    AssignmentsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-assignments',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\assignments\assignments.html"*/'<!--\n\n  Generated template for the AssignmentsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title align-items-center>Assignments</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-card>\n\n    <ion-card-header>\n\n      Ongoing (Pågående)\n\n    </ion-card-header>\n\n\n\n    <ion-list class="custom">\n\n\n\n      <button ion-item (click)="navToAssignDetails()">\n\n        <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n        <h2>Case name 1</h2>\n\n        <p>Deadline: </p>\n\n      </button>\n\n      \n\n    </ion-list>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n  <ion-card-header>\n\n    Completed\n\n  </ion-card-header>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n      <h2>Case name 1</h2>\n\n      <p>Submitted on: </p>\n\n    </button>\n\n  </ion-list>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>\n\n      <h2>Case name 2</h2>\n\n      <p>Submitted on: </p>\n\n    </button>\n\n  </ion-list>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n      <h2>Case name 3</h2>\n\n      <p>Submitted on: </p>\n\n    </button>\n\n  </ion-list>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n  <ion-card-header>\n\n    Upcoming\n\n  </ion-card-header>\n\n  <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>\n\n      <h2>Case name 1</h2>\n\n      <p>Start date: </p>\n\n    </button>\n\n  </ion-list>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\assignments\assignments.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], AssignmentsPage);
+    return AssignmentsPage;
+}());
+
+//# sourceMappingURL=assignments.js.map
 
 /***/ }),
 
@@ -323,65 +323,6 @@ var MessagesPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyprofilePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the MyprofilePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var MyprofilePage = (function () {
-    function MyprofilePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.test = "UserNAME";
-    }
-    MyprofilePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MyprofilePage');
-    };
-    MyprofilePage.prototype.navToMyResults = function () {
-        this.navCtrl.push('MyresultsPage');
-        console.log('Navigating to another module');
-    };
-    MyprofilePage.prototype.navToSelfAssessments = function () {
-        this.navCtrl.push('MyselfassessmentsPage');
-        console.log('navigating within same module');
-    };
-    MyprofilePage.prototype.navToEditProfile = function () {
-        this.navCtrl.push('EditprofilePage');
-        console.log('navigating within same module');
-    };
-    MyprofilePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-myprofile',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\myprofile\myprofile.html"*/'<!--\n\n  Generated template for the MyprofilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header xmlns="http://www.w3.org/1999/html">\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Min Profil</ion-title>\n\n    <ion-buttons end> <button ion-button> STL </button> </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!-- dimensions set using attributes -->\n\n    <div text-center>\n\n        <ion-img align="center" width="120" height="120" src="/assets/imgs/myprofile_icon.jpg"></ion-img>\n\n    </div>\n\n    <h5 ion-text color="danger" text-center> {{ test }}</h5>\n\n    <ion-toolbar>\n\n        <ion-title>Personuppgifter</ion-title>\n\n    </ion-toolbar>\n\n\n\n  <ion-list>\n\n      <ion-item name="fullname">\n\n          <ion-icon md="md-person" item-start> </ion-icon> Full name\n\n      </ion-item>\n\n      <ion-item name="email"> <ion-icon md="md-mail" item-start> </ion-icon> Email</ion-item>\n\n      <ion-item name="telephone"> <ion-icon md="md-call" item-start> </ion-icon> Telephone</ion-item>\n\n      <ion-item name="cityname"> <ion-icon md="md-globe" item-start> </ion-icon> City name</ion-item>\n\n      <ion-item name="school_name"> <ion-icon md="md-home" item-start> </ion-icon> School name</ion-item>\n\n      <ion-item name="workplace_tools">\n\n          <strong> Workplace tools: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="teaching_grade">\n\n          <strong> Teaching Grade: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="work_methods">\n\n          <strong>\n\n              Work methods:\n\n          </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="subjects">\n\n          <strong>Subjects: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="years_as_teacher">\n\n          <strong>Years as teacher: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="technical_support">\n\n          <strong>\n\n              Technical upport:\n\n          </strong>  text here!\n\n      </ion-item>\n\n      <ion-item name="student_to_student_feedback">\n\n          <strong>\n\n              Student to Student feedback:\n\n          </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="technology_use_in_teaching">\n\n          <strong>\n\n              Technology use in teaching\n\n          </strong> text here!\n\n      </ion-item>\n\n  </ion-list>\n\n    <button (click)="navToMyResults()" ion-button color="primary_color">My Results</button>\n\n    <button (click)="navToSelfAssessments()" ion-button color="primary_color">Self-Assessments</button>\n\n    <button (click)="navToEditProfile()" ion-button color="primary_color">Edit Profile</button>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\myprofile\myprofile.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], MyprofilePage);
-    return MyprofilePage;
-}());
-
-//# sourceMappingURL=myprofile.js.map
-
-/***/ }),
-
-/***/ 110:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
@@ -422,6 +363,69 @@ var WelcomePage = (function () {
 
 /***/ }),
 
+/***/ 110:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyprofilePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(52);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the MyprofilePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MyprofilePage = (function () {
+    function MyprofilePage(navCtrl, navParams, homePage) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.homePage = homePage;
+        this.test = "UserNAME";
+        this.user = homePage.userAuth;
+    }
+    MyprofilePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MyprofilePage');
+    };
+    MyprofilePage.prototype.navToMyResults = function () {
+        this.navCtrl.push('MyresultsPage');
+        console.log('Navigating to another module');
+    };
+    MyprofilePage.prototype.navToSelfAssessments = function () {
+        this.navCtrl.push('MyselfassessmentsPage');
+        console.log('navigating within same module');
+    };
+    MyprofilePage.prototype.navToEditProfile = function () {
+        this.navCtrl.push('EditprofilePage');
+        console.log('navigating within same module');
+    };
+    MyprofilePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-myprofile',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\myprofile\myprofile.html"*/'<!--\n\n  Generated template for the MyprofilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header xmlns="http://www.w3.org/1999/html">\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Min Profil</ion-title>\n\n    <ion-buttons end> <button ion-button> STL </button> </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <!-- dimensions set using attributes -->\n\n    <div text-center>\n\n        <ion-img align="center" width="120" height="120" src="/assets/imgs/myprofile_icon.jpg"></ion-img>\n\n    </div>\n\n    <h5 ion-text color="danger" text-center> {{ test }}</h5>\n\n    <ion-toolbar>\n\n        <ion-title>Personuppgifter</ion-title>\n\n    </ion-toolbar>\n\n\n\n  <ion-list>\n\n      <ion-item name="fullname">\n\n          <ion-icon md="md-person" item-start> </ion-icon> Full name\n\n      </ion-item>\n\n      <ion-item name="email"> <ion-icon md="md-mail" item-start> </ion-icon> Email</ion-item>\n\n      <ion-item name="telephone"> <ion-icon md="md-call" item-start> </ion-icon> Telephone</ion-item>\n\n      <ion-item name="cityname"> <ion-icon md="md-globe" item-start> </ion-icon> City name</ion-item>\n\n      <ion-item name="school_name"> <ion-icon md="md-home" item-start> </ion-icon> School name</ion-item>\n\n      <ion-item name="workplace_tools">\n\n          <strong> Workplace tools: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="teaching_grade">\n\n          <strong> Teaching Grade: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="work_methods">\n\n          <strong>\n\n              Work methods:\n\n          </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="subjects">\n\n          <strong>Subjects: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="years_as_teacher">\n\n          <strong>Years as teacher: </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="technical_support">\n\n          <strong>\n\n              Technical upport:\n\n          </strong>  text here!\n\n      </ion-item>\n\n      <ion-item name="student_to_student_feedback">\n\n          <strong>\n\n              Student to Student feedback:\n\n          </strong> text here!\n\n      </ion-item>\n\n      <ion-item name="technology_use_in_teaching">\n\n          <strong>\n\n              Technology use in teaching\n\n          </strong> text here!\n\n      </ion-item>\n\n  </ion-list>\n\n    <button (click)="navToMyResults()" ion-button color="primary_color">My Results</button>\n\n    <button (click)="navToSelfAssessments()" ion-button color="primary_color">Self-Assessments</button>\n\n    <button (click)="navToEditProfile()" ion-button color="primary_color">Edit Profile</button>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\myprofile\myprofile.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]) === "function" && _c || Object])
+    ], MyprofilePage);
+    return MyprofilePage;
+    var _a, _b, _c;
+}());
+
+//# sourceMappingURL=myprofile.js.map
+
+/***/ }),
+
 /***/ 123:
 /***/ (function(module, exports) {
 
@@ -452,71 +456,71 @@ var map = {
 		17
 	],
 	"../pages/assignments/assignments.module": [
-		291,
+		297,
 		16
 	],
 	"../pages/assignmentsub/assignmentsub.module": [
-		292,
+		291,
 		7
 	],
 	"../pages/courses/courses.module": [
-		293,
+		292,
 		15
 	],
 	"../pages/editprofile/editprofile.module": [
-		294,
+		293,
 		6
 	],
 	"../pages/feedbacks/feedbacks.module": [
-		295,
+		294,
 		14
 	],
 	"../pages/home/home.module": [
-		296,
+		295,
 		13
 	],
 	"../pages/importantdates/importantdates.module": [
-		297,
+		296,
 		12
 	],
 	"../pages/login/login.module": [
-		298,
+		305,
 		11
 	],
 	"../pages/menu/menu.module": [
-		299,
+		298,
 		5
 	],
 	"../pages/messages/messages.module": [
-		300,
+		299,
 		10
 	],
 	"../pages/myprofile/myprofile.module": [
-		301,
+		307,
 		9
 	],
 	"../pages/myresults/myresults.module": [
-		302,
+		301,
 		4
 	],
 	"../pages/myselfassessments/myselfassessments.module": [
-		303,
+		300,
 		3
 	],
 	"../pages/selfassess/selfassess.module": [
-		304,
+		302,
 		2
 	],
 	"../pages/studentmessage/studentmessage.module": [
-		305,
+		306,
 		1
 	],
 	"../pages/teachermessage/teachermessage.module": [
-		306,
+		303,
 		0
 	],
 	"../pages/welcome/welcome.module": [
-		307,
+		304,
 		8
 	]
 };
@@ -607,15 +611,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_assignments_assignments__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_myprofile_myprofile__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_courses_courses__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_feedbacks_feedbacks__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_importantdates_importantdates__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_assignments_assignments__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_myprofile_myprofile__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_courses_courses__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_feedbacks_feedbacks__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_importantdates_importantdates__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_service_service__ = __webpack_require__(288);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_about_about__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_login_login__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_welcome_welcome__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_welcome_welcome__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_authentication_authentication__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_messages_messages__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_assignmendesc_assignmendesc__ = __webpack_require__(103);
@@ -672,23 +676,23 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/assignmendesc/assignmendesc.module#AssignmendescPageModule', name: 'AssignmendescPage', segment: 'assignmendesc', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/assignments/assignments.module#AssignmentsPageModule', name: 'AssignmentsPage', segment: 'assignments', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/assignmentsub/assignmentsub.module#AssignmentsubPageModule', name: 'AssignmentsubPage', segment: 'assignmentsub', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/courses/courses.module#CoursesPageModule', name: 'CoursesPage', segment: 'courses', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/editprofile/editprofile.module#EditprofilePageModule', name: 'EditprofilePage', segment: 'editprofile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/feedbacks/feedbacks.module#FeedbacksPageModule', name: 'FeedbacksPage', segment: 'feedbacks', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/importantdates/importantdates.module#ImportantdatesPageModule', name: 'ImportantdatesPage', segment: 'importantdates', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/assignments/assignments.module#AssignmentsPageModule', name: 'AssignmentsPage', segment: 'assignments', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/messages/messages.module#MessagesPageModule', name: 'MessagesPage', segment: 'messages', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/myresults/myresults.module#MyresultsPageModule', name: 'MyresultsPage', segment: 'myresults', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/myselfassessments/myselfassessments.module#MyselfassessmentsPageModule', name: 'MyselfassessmentsPage', segment: 'myselfassessments', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/myresults/myresults.module#MyresultsPageModule', name: 'MyresultsPage', segment: 'myresults', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/selfassess/selfassess.module#SelfassessPageModule', name: 'SelfassessPage', segment: 'selfassess', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/studentmessage/studentmessage.module#StudentmessagePageModule', name: 'StudentmessagePage', segment: 'studentmessage', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/teachermessage/teachermessage.module#TeachermessagePageModule', name: 'TeachermessagePage', segment: 'teachermessage', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/studentmessage/studentmessage.module#StudentmessagePageModule', name: 'StudentmessagePage', segment: 'studentmessage', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -733,13 +737,13 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_assignments_assignments__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_myprofile_myprofile__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_courses_courses__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_feedbacks_feedbacks__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_importantdates_importantdates__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_assignments_assignments__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_myprofile_myprofile__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_courses_courses__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_feedbacks_feedbacks__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_importantdates_importantdates__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_about_about__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_welcome_welcome__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_welcome_welcome__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_messages_messages__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_assignmendesc_assignmendesc__ = __webpack_require__(103);
@@ -1031,11 +1035,10 @@ var HomePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\home\home.html"*/'<!--\n\n  Generated template for the HomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <!--<img ion-right src="assets/imgs/stllogo.png" class="navbarLogo" />-->\n\n    <ion-title>Home</ion-title>\n\n    <ion-buttons end> <button ion-button> STL </button> </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="home">\n\n    <ion-card>\n\n        <ion-card-header>\n\n            Påminnelser\n\n        </ion-card-header>\n\n        <ion-list class="custom">\n\n              <button ion-item>\n\n                  <ion-avatar item-start>\n\n                      <img src="/assets/imgs/myprofile_icon.jpg">\n\n                  </ion-avatar>\n\n                  <h2>Assignment case</h2>\n\n                  <p>Deadline: date</p>\n\n              </button>\n\n        </ion-list>\n\n    </ion-card>\n\n\n\n  <ion-card>\n\n    <ion-card-header>\n\n      Meddelanden\n\n    </ion-card-header>\n\n    <ion-list class="custom">\n\n      <button ion-item>\n\n        <ion-avatar item-start>\n\n          <img src="/assets/imgs/myprofile_icon.jpg">\n\n        </ion-avatar>\n\n        <h2>{{ userdata.name }}</h2>\n\n        <p>The short version of the meassage goes here</p>\n\n      </button>\n\n    </ion-list>\n\n    <ion-list class="custom">\n\n    <button ion-item>\n\n      <ion-avatar item-start>\n\n        <img src="/assets/imgs/myprofile_icon.jpg">\n\n      </ion-avatar>\n\n      <h2>Student name</h2>\n\n      <p>The short version of the meassage goes here</p>\n\n    </button>\n\n  </ion-list>\n\n    <ion-list class="custom">\n\n      <button ion-item>\n\n        <ion-avatar item-start>\n\n          <img src="/assets/imgs/myprofile_icon.jpg">\n\n        </ion-avatar>\n\n        <h2>Instructor name</h2>\n\n        <p>The short version of the meassage goes here</p>\n\n      </button>\n\n    </ion-list>\n\n  </ion-card>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\home\home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */]) === "function" && _c || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=home.js.map
