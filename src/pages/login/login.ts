@@ -25,7 +25,7 @@ export class LoginPage {
               public alertCtrl: AlertController) {
   }
 
-    email:string = "anna.blohm@kalmar.se";
+    email:string = "anne.erdhage@upplands-bro.se";
     password:string = "12345";
 
     user = {
@@ -38,8 +38,6 @@ export class LoginPage {
     doLogin() {
         this.user.email = this.email;
         this.user.password = this.password;
-
-        // console.log(this.auth());
         this.auth();
     }
 
@@ -47,18 +45,13 @@ export class LoginPage {
 
         return this.authentication.login(this.user).subscribe(
             data => {
-
-                 console.log(data);
-
-                 this.navCtrl.setRoot(HomePage);
+                this.navCtrl.setRoot(HomePage, {user:data});
             },
             error2 => {
                 console.log(error2)
                 this.showAlert();
             }
         )
-
-        // console.log(this.authUser);
     }
 
     showAlert() {

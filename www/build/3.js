@@ -72,7 +72,11 @@ var AssignmentongoingPage = (function () {
     };
     AssignmentongoingPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+<<<<<<< HEAD
             selector: 'page-assignmentongoing',template:/*ion-inline-start:"C:\stlproject\stlapp3\src\pages\assignmentongoing\assignmentongoing.html"*/'<!--\n  Generated template for the AssignmentongoingPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>assignmentongoing</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\stlproject\stlapp3\src\pages\assignmentongoing\assignmentongoing.html"*/,
+=======
+            selector: 'page-myselfassessments',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/'<!--\n\n  Generated template for the MyselfassessmentsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Självbedömning</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\myselfassessments\myselfassessments.html"*/,
+>>>>>>> a10cb7a264cde6305b9d57849a99d77c19652f6c
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], AssignmentongoingPage);
