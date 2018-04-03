@@ -21,5 +21,8 @@ export class AssignmendescPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AssignmendescPage');
   }
-
+    navToAssignDetails() {
+        this.navCtrl.push('MyresultsPage');
+        console.log('Navigating to another module');
+    }
 }
