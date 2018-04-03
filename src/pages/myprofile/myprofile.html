@@ -21,50 +21,43 @@
     <div text-center>
         <ion-img align="center" width="120" height="120" src="/assets/imgs/myprofile_icon.jpg"></ion-img>
     </div>
-    <h5 ion-text color="danger" text-center> {{ test }}</h5>
-    <ion-toolbar>
-        <ion-title>Personuppgifter</ion-title>
-    </ion-toolbar>
-
+    <h5 ion-text color="danger" text-center> {{ user.user.first_name + "  "+ user.user.last_name}}</h5>
+    <!--<h5 ion-text color="danger" text-center> Full name</h5>-->
+    <ion-card>
+        <ion-card-header>Personuppgifter</ion-card-header>
+    </ion-card>
   <ion-list>
       <ion-item name="fullname">
-          <ion-icon md="md-person" item-start> </ion-icon> Full name
+          <ion-icon md="md-person" item-start> </ion-icon>
+          {{ user.user.first_name + "  "+ user.user.last_name}}
       </ion-item>
-      <ion-item name="email"> <ion-icon md="md-mail" item-start> </ion-icon> Email</ion-item>
-      <ion-item name="telephone"> <ion-icon md="md-call" item-start> </ion-icon> Telephone</ion-item>
-      <ion-item name="cityname"> <ion-icon md="md-globe" item-start> </ion-icon> City name</ion-item>
-      <ion-item name="school_name"> <ion-icon md="md-home" item-start> </ion-icon> School name</ion-item>
+      <ion-item name="email"> <ion-icon md="md-mail" item-start> </ion-icon> {{ user.user.email }} </ion-item>
+      <ion-item name="telephone"> <ion-icon md="md-call" item-start> </ion-icon> {{ user.user.telephone }} </ion-item>
+      <ion-item name="cityname"> <ion-icon md="md-globe" item-start> </ion-icon> {{ user.city.city_name }} </ion-item>
+      <ion-item name="school_name"> <ion-icon md="md-home" item-start> </ion-icon> {{ user.school.school_name }} </ion-item>
       <ion-item name="workplace_tools">
-          <strong> Workplace tools: </strong> text here!
+          <strong> Workplace tools: </strong> {{ user.workplace_tools }}
       </ion-item>
       <ion-item name="teaching_grade">
-          <strong> Teaching Grade: </strong> text here!
+          <strong> Teaching Grade: </strong> {{ user.teaching_grade }}
       </ion-item>
       <ion-item name="work_methods">
-          <strong>
-              Work methods:
-          </strong> text here!
+          <strong> Work methods: </strong> {{ user.work_methods }}
       </ion-item>
       <ion-item name="subjects">
-          <strong>Subjects: </strong> text here!
+          <strong> Subjects: </strong> {{ user.subjects }}
       </ion-item>
       <ion-item name="years_as_teacher">
-          <strong>Years as teacher: </strong> text here!
+          <strong>  Years as teacher: </strong> {{ user.years_as_teacher }}
       </ion-item>
       <ion-item name="technical_support">
-          <strong>
-              Technical upport:
-          </strong>  text here!
+          <strong> Technical upport: </strong>  {{ user.technical_support }}
       </ion-item>
       <ion-item name="student_to_student_feedback">
-          <strong>
-              Student to Student feedback:
-          </strong> text here!
+          <strong> Student to Student feedback: </strong> {{ user.student_to_student_feedback }}
       </ion-item>
       <ion-item name="technology_use_in_teaching">
-          <strong>
-              Technology use in teaching
-          </strong> text here!
+          <strong> Technology use in teaching: </strong> {{ user.technology_use_in_teaching }}
       </ion-item>
   </ion-list>
     <button (click)="navToMyResults()" ion-button color="primary_color">My Results</button>

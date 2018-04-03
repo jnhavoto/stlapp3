@@ -3,6 +3,7 @@ import {AlertController, IonicPage, LoadingController, NavController, NavParams}
 import {AuthenticationProvider} from "../../providers/authentication/authentication";
 import {HttpClient} from "@angular/common/http";
 import {HomePage} from "../home/home";
+import {MyprofilePage} from "../myprofile/myprofile";
 
 /**
  * Generated class for the LoginPage page.
@@ -26,7 +27,7 @@ export class LoginPage {
               public loadingCtrl: LoadingController) {
   }
 
-    email:string = "ann-christine.thunqvist@nynashamn.se";
+    email:string = "mbergstrom@instructure.com";
     password:string = "12345";
 
     user = {
@@ -44,9 +45,7 @@ export class LoginPage {
     }
 
     auth() {
-
         this.presentLoading();
-
         return this.authentication.login(this.user).subscribe(
             data => {
                 this.dismissLoading();
@@ -61,7 +60,7 @@ export class LoginPage {
 
     showAlert() {
         let alert = this.alertCtrl.create({
-            title: 'Login Faild!',
+            title: 'Login Failed!',
             subTitle: 'Email or Password wrong',
             buttons: ['OK']
         });

@@ -3,6 +3,7 @@ import {IonicPage, NavController, NavParams, App} from 'ionic-angular';
 import {LoginPage} from "../login/login";
 import { MyprofilePage } from '../myprofile/myprofile';
 
+import {global} from "../global";
 /**
  * Generated class for the HomePage page.
  *
@@ -29,6 +30,8 @@ export class HomePage {
                 public app: App) {
 
         this.userAuth = navParams.get("user");
+
+        global.loginState = navParams.get("user");
     }
 
     ionViewDidLoad() {

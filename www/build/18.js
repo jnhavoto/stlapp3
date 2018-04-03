@@ -1,14 +1,14 @@
 webpackJsonp([18],{
 
-/***/ 289:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutPageModule", function() { return AboutPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AssignmendescPageModule", function() { return AssignmendescPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assignmendesc__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AboutPageModule = (function () {
-    function AboutPageModule() {
+var AssignmendescPageModule = (function () {
+    function AssignmendescPageModule() {
     }
-    AboutPageModule = __decorate([
+    AssignmendescPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__about__["a" /* AboutPage */],
+                __WEBPACK_IMPORTED_MODULE_2__assignmendesc__["a" /* AssignmendescPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about__["a" /* AboutPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__assignmendesc__["a" /* AssignmendescPage */]),
             ],
         })
-    ], AboutPageModule);
-    return AboutPageModule;
+    ], AssignmendescPageModule);
+    return AssignmendescPageModule;
 }());
 
-//# sourceMappingURL=about.module.js.map
+//# sourceMappingURL=assignmendesc.module.js.map
 
 /***/ })
 
