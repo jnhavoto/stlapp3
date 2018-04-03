@@ -1,14 +1,14 @@
 webpackJsonp([7],{
 
-/***/ 295:
+/***/ 292:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedbacksPageModule", function() { return FeedbacksPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AssignmentsubPageModule", function() { return AssignmentsubPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feedbacks__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assignmentsub__ = __webpack_require__(308);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,30 +18,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FeedbacksPageModule = (function () {
-    function FeedbacksPageModule() {
+var AssignmentsubPageModule = (function () {
+    function AssignmentsubPageModule() {
     }
-    FeedbacksPageModule = __decorate([
+    AssignmentsubPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__feedbacks__["a" /* FeedbacksPage */],
+                __WEBPACK_IMPORTED_MODULE_2__assignmentsub__["a" /* AssignmentsubPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__feedbacks__["a" /* FeedbacksPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__assignmentsub__["a" /* AssignmentsubPage */]),
             ],
         })
-    ], FeedbacksPageModule);
-    return FeedbacksPageModule;
+    ], AssignmentsubPageModule);
+    return AssignmentsubPageModule;
 }());
 
-<<<<<<< HEAD
-//# sourceMappingURL=feedbacks.module.js.map
-=======
 //# sourceMappingURL=assignmentsub.module.js.map
 
 /***/ }),
 
-/***/ 309:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77,13 +74,12 @@ var AssignmentsubPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-assignmentsub',template:/*ion-inline-start:"D:\life\Ionic Projects\stlapp3\src\pages\assignmentsub\assignmentsub.html"*/'<!--\n\n  Generated template for the AssignmentsubPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>assignmentsub</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\life\Ionic Projects\stlapp3\src\pages\assignmentsub\assignmentsub.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], AssignmentsubPage);
     return AssignmentsubPage;
 }());
 
 //# sourceMappingURL=assignmentsub.js.map
->>>>>>> a10cb7a264cde6305b9d57849a99d77c19652f6c
 
 /***/ })
 
