@@ -21,5 +21,9 @@ export class AssignmentsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AssignmentsPage');
   }
+    navToAssignDetails() {
+        this.navCtrl.push('navToAssignDetails');
+        console.log('Navigating to another module');
 
+    }
 }

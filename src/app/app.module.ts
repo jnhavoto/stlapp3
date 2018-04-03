@@ -22,14 +22,13 @@ import {LoginPage} from "../pages/login/login";
 import {WelcomePage} from "../pages/welcome/welcome";
 import { AuthenticationProvider } from '../providers/authentication/authentication';
 import {MessagesPage} from "../pages/messages/messages";
+import {AssignmendescPage} from "../pages/assignmendesc/assignmendesc";
 
 
 @NgModule({
   declarations: [
       MyApp,
       HomePage,
-      //ListPage,
-      //LoginPage,
       MyprofilePage,
       CoursesPage,
       AssignmentsPage,
@@ -39,6 +38,7 @@ import {MessagesPage} from "../pages/messages/messages";
       LoginPage,
       WelcomePage,
       MessagesPage,
+      AssignmendescPage,
   ],
   imports: [
     BrowserModule,HttpClientModule,
@@ -57,6 +57,7 @@ import {MessagesPage} from "../pages/messages/messages";
       LoginPage,
       WelcomePage,
       MessagesPage,
+      AssignmendescPage,
   ],
   providers: [
     StatusBar,

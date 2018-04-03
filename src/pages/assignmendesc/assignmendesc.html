@@ -19,7 +19,7 @@
       Ongoing (Pågående)
     </ion-card-header>
     <ion-list class="custom">
-      <button ion-item>
+      <button ion-item (click)="navToAssignDetails()">
         <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>
         <h2>Se uppgift</h2>
       </button>
@@ -49,7 +49,7 @@
       </button>
     </ion-list>
     <ion-list class="custom">
-      <button ion-item>
+      <button ion-item >
         <ion-icon ios="ios-person" md="md-person" item-start></ion-icon>
         <h2>Återkoppling</h2>
       </button>
