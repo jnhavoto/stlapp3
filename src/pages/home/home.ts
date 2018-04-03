@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, App} from 'ionic-angular';
 import {LoginPage} from "../login/login";
+import { MyprofilePage } from '../myprofile/myprofile';
 
 /**
  * Generated class for the HomePage page.
@@ -16,13 +17,11 @@ import {LoginPage} from "../login/login";
 })
 export class HomePage {
 
-    userAuth = {user: {}};
+    public userAuth = {user: {}};
     userdata = {
         name:"teste",
-        email: ""
+        email:""
     }
-
-    test ="Claud Sumbus"
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,

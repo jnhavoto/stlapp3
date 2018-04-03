@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import {IonicApp, IonicErrorHandler, IonicModule, NavController} from 'ionic-angular';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -63,7 +63,7 @@ import {MessagesPage} from "../pages/messages/messages";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceProvider,
-    AuthenticationProvider
+    AuthenticationProvider,
   ]
 })
 export class AppModule {}
