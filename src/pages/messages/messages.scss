@@ -15,4 +15,15 @@ page-messages {
     border-color: color($colors, primary);   /*Sets colors for top and bottom border*/
     color: white;    /*Text color for each item*/
   }
+
+ .currentTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: color($colors, bluecolor);
+  }
 }
