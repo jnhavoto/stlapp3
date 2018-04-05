@@ -29,14 +29,14 @@ export class HomePage {
                 public navParams: NavParams,
                 public app: App) {
 
-        this.userAuth = navParams.get("user");
+        // this.userAuth = navParams.get("user");
 
-        global.loginState = navParams.get("user");
+        // global.loginState = navParams.get("user");
     }
 
     ionViewDidLoad() {
-        console.log(this.userAuth);
-        this.userdata.name = this.userAuth.user[0].user.first_name;
+        // console.log(this.userAuth);
+        // this.userdata.name = this.userAuth.user[0].user.first_name;
     }
 
     logout() {
