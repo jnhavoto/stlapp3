@@ -5,6 +5,8 @@ import {HttpClient} from "@angular/common/http";
 import {HomePage} from "../home/home";
 import {MyprofilePage} from "../myprofile/myprofile";
 
+import {global} from "../global";
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -27,7 +29,7 @@ export class LoginPage {
               public loadingCtrl: LoadingController) {
   }
 
-    email:string = "mbergstrom@instructure.com";
+    email:string = "ann-christine.thunqvist@nynashamn.se";
     password:string = "12345";
 
     user = {
@@ -46,10 +48,12 @@ export class LoginPage {
 
     auth() {
         this.presentLoading();
+        
         return this.authentication.login(this.user).subscribe(
             data => {
                 this.dismissLoading();
-                this.navCtrl.setRoot(HomePage, {user:data});
+                global.loginState = data;
+                this.navCtrl.setRoot(HomePage);
             },
             error2 => {
                 console.log(error2)
