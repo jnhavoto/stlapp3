@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
 import {global} from "../global";
 
 
@@ -38,13 +37,11 @@ export class MyprofilePage {
         // this.user = homePage.userAuth;
     }
 
-
     fill(){
         this.userData.fullname = this.user.user.first_name +" "+ this.user.user.last_name;
         this.userData.email = this.user.user.email;
         this.userData.school = this.user.school.name;
         this.userData.telephone = this.user.user.telephone;
-
     }
     ionViewDidLoad() {
         console.log(this.user);

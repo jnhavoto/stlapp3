@@ -3,6 +3,7 @@ import {IonicPage, NavController, NavParams, App} from 'ionic-angular';
 import {LoginPage} from "../login/login";
 //import { MyprofilePage } from '../myprofile/myprofile';
 import {global} from "../global";
+import {ServiceProvider} from "../../providers/service/service";
 
 /**
  * Generated class for the HomePage page.
@@ -20,48 +21,48 @@ import {global} from "../global";
 export class HomePage {
 
     user: any;
-
     public userAuth = {user: {}};
-
-    /*userdata = {
-        name:"teste",
-        email:""
-    }*/
-
-    userData : {
-        case:string,
-        instructions:string,
-        startdate: Date,
-        deadline: Date,
-        //available_date: Date
-        //teacher_course_id: int
-    }
-
-
+    last_assignment: any;
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
-                public app: App)
+                public app: App,
+                private assignments: ServiceProvider)
     {
         this.user = global.loginState.user[0];
+        this.getLastAssignment();
     }
-
+//get all assignments
     fill(){
-        this.userData.case = this.user.user.case;
-        /*this.userData.email = this.user.user.email;
-        this.userData.school = this.user.school.name;
-        this.userData.telephone = this.user.user.telephone;
-        */
+        this.assignments.getAssignments().subscribe(
+            data => {
+                console.log(data);
+            },
+            error2 => {
+                    console.log(error2)
+            }
+        )
+    }
+//Get the las Assignment ordered by deadline
+    getLastAssignment(){
+        this.assignments.getLastAssignment().subscribe(
+            data => {
+                this.last_assignment=data["lastAssignment"];
+                console.log("Last assign");
+                console.log(this.last_assignment.case);
+            },
+            error2 => {
+                console.log(error2)
+            }
+        )
     }
 
     ionViewDidLoad() {
-        console.log(this.user);
+        console.log(this.assignments);
         // this.userdata.name = this.userAuth.user[0].user.first_name;
     }
 
     logout() {
-        // Remove API token
-        // const root = this.app.getRootNav();
         // root.popToRoot();
         this.navCtrl.setRoot(LoginPage);
     }

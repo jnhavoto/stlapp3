@@ -20,12 +20,12 @@
       Ongoing (Pågående)
     </ion-card-header>
 
-    <ion-list class="custom">
+    <ion-list class="custom" *ngFor="let assignment of arryAssignments">
 
-      <button ion-item (click)="navToAssignDetails()">
+      <button ion-item (click)="navToAssignDetails(assignment)">
         <ion-icon name="person" item-start></ion-icon>
-        <h2>Case name 1</h2>
-        <p>Deadline: </p>
+        <h2>Case: {{assignment.case}}</h2>
+        <p>Deadline: {{assignment.deadline}} </p>
       </button>
       
     </ion-list>

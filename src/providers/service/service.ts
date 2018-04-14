@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Observable} from "rxjs/Observable";
 
@@ -14,19 +14,20 @@ export class ServiceProvider {
   constructor(public http: HttpClient) {
     console.log('Hello ServiceProvider Provider');
 }
-
-    getUsers1() {
-        return new Promise(resolve => {
-            this.http.get("http://127.0.0.1:1000/api/student/1");
-
-        });
+    getAssignments() : Observable<any>{
+        const  headers = new HttpHeaders({'Content-Type': 'application/json'})
+        let url = 'http://127.0.0.1:8000/api/assignment-descriptions';
+        return this.http.get(url, {headers: headers});
     }
 
-    getUsers() : Observable<any>{
-
-        let url = 'http://127.0.0.1:1000/api/student/1';
-
-        return this.http.get(url);
-
+    getLastAssignment() : Observable<any>{
+        const  headers = new HttpHeaders({'Content-Type': 'application/json'})
+        let url = 'http://127.0.0.1:8000/api/last-assignment-descriptions';
+        return this.http.get(url, {headers: headers});
     }
+
+    // getCourses()
+
+
+
 }

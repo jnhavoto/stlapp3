@@ -15,7 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AssigndetailsPage {
 
+  assignment: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  this.assignment= this.navParams.data;
+      console.log(this.assignment);
   }
 
   ionViewDidLoad() {
