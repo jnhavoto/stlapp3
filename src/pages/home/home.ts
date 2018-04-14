@@ -1,9 +1,9 @@
-import {Component, Injectable} from '@angular/core';
+import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, App} from 'ionic-angular';
 import {LoginPage} from "../login/login";
-import { MyprofilePage } from '../myprofile/myprofile';
-
+//import { MyprofilePage } from '../myprofile/myprofile';
 import {global} from "../global";
+
 /**
  * Generated class for the HomePage page.
  *
@@ -19,23 +19,43 @@ import {global} from "../global";
 
 export class HomePage {
 
+    user: any;
+
     public userAuth = {user: {}};
-    userdata = {
+
+    /*userdata = {
         name:"teste",
         email:""
+    }*/
+
+    userData : {
+        case:string,
+        instructions:string,
+        startdate: Date,
+        deadline: Date,
+        //available_date: Date
+        //teacher_course_id: int
     }
+
+
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
-                public app: App) {
+                public app: App)
+    {
+        this.user = global.loginState.user[0];
+    }
 
-        // this.userAuth = navParams.get("user");
-
-        // global.loginState = navParams.get("user");
+    fill(){
+        this.userData.case = this.user.user.case;
+        /*this.userData.email = this.user.user.email;
+        this.userData.school = this.user.school.name;
+        this.userData.telephone = this.user.user.telephone;
+        */
     }
 
     ionViewDidLoad() {
-        // console.log(this.userAuth);
+        console.log(this.user);
         // this.userdata.name = this.userAuth.user[0].user.first_name;
     }
 

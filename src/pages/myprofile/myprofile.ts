@@ -32,13 +32,10 @@ export class MyprofilePage {
     constructor(
         public navCtrl: NavController,
         public navParams: NavParams
-        ) {
-
-
+        )
+    {
         this.user = global.loginState.user[0];
-
         // this.user = homePage.userAuth;
-
     }
 
 

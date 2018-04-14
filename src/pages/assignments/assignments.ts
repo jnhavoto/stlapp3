@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+//import {AssigndetailsPage} from "../assigndetails/assigndetails";
 
 /**
  * Generated class for the AssignmentsPage page.
@@ -22,7 +23,7 @@ export class AssignmentsPage {
     console.log('ionViewDidLoad AssignmentsPage');
   }
     navToAssignDetails() {
-        this.navCtrl.push('navToAssignDetails');
+        this.navCtrl.push('AssigndetailsPage');
         console.log('Navigating to another module');
 
     }

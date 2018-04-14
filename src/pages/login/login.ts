@@ -29,7 +29,7 @@ export class LoginPage {
               public loadingCtrl: LoadingController) {
   }
 
-    email:string = "ann-christine.thunqvist@nynashamn.se";
+    email:string = "mbergstrom@instructure.com";
     password:string = "12345";
 
     user = {
