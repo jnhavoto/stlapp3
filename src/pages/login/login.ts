@@ -43,7 +43,9 @@ export class LoginPage {
     doLogin() {
         this.user.email = this.email;
         this.user.password = this.password;
-        this.auth();
+        // this.auth();
+        this.navCtrl.setRoot(HomePage);
+
     }
 
     auth() {

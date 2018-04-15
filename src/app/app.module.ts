@@ -20,6 +20,14 @@ import {WelcomePage} from "../pages/welcome/welcome";
 import { AuthenticationProvider } from '../providers/authentication/authentication';
 import {MessagesPage} from "../pages/messages/messages";
 import {AssignmendescPage} from "../pages/assignmendesc/assignmendesc";
+import { TtesteProvider } from '../providers/tteste/tteste';
+import { AssignmentDescriptionProvider } from '../providers/assignment-description/assignment-description';
+import { AssignmentSubmissionProvider } from '../providers/assignment-submission/assignment-submission';
+import { CityProvider } from '../providers/city/city';
+import { CourseProvider } from '../providers/course/course';
+import { DepartmentProvider } from '../providers/department/department';
+import { FeedbackProvider } from '../providers/feedback/feedback';
+import { GroupAssignmentProvider } from '../providers/group-assignment/group-assignment';
 //import {AssigndetailsPage} from "../pages/assigndetails/assigndetails";
 
 
@@ -63,6 +71,14 @@ import {AssignmendescPage} from "../pages/assignmendesc/assignmendesc";
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceProvider,
     AuthenticationProvider,
+    TtesteProvider,
+    AssignmentDescriptionProvider,
+    AssignmentSubmissionProvider,
+    CityProvider,
+    CourseProvider,
+    DepartmentProvider,
+    FeedbackProvider,
+    GroupAssignmentProvider,
   ]
 })
 export class AppModule {}
