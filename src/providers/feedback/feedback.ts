@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
+import {Observable} from "rxjs/Observable";
 /*
   Generated class for the FeedbackProvider provider.
 

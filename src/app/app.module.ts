@@ -28,6 +28,15 @@ import { CourseProvider } from '../providers/course/course';
 import { DepartmentProvider } from '../providers/department/department';
 import { FeedbackProvider } from '../providers/feedback/feedback';
 import { GroupAssignmentProvider } from '../providers/group-assignment/group-assignment';
+import { GroupHistoryProvider } from '../providers/group-history/group-history';
+import { RatingFeedbackProvider } from '../providers/rating-feedback/rating-feedback';
+import { SchoolProvider } from '../providers/school/school';
+import { SelfAssessmentAssignmentProvider } from '../providers/self-assessment-assignment/self-assessment-assignment';
+import { SelfAssessmentProvider } from '../providers/self-assessment/self-assessment';
+import { StudentProvider } from '../providers/student/student';
+import { TeacherProvider } from '../providers/teacher/teacher';
+import { TeacherCourseProvider } from '../providers/teacher-course/teacher-course';
+import { UserProvider } from '../providers/user/user';
 //import {AssigndetailsPage} from "../pages/assigndetails/assigndetails";
 
 
@@ -79,6 +88,15 @@ import { GroupAssignmentProvider } from '../providers/group-assignment/group-ass
     DepartmentProvider,
     FeedbackProvider,
     GroupAssignmentProvider,
+    GroupHistoryProvider,
+    RatingFeedbackProvider,
+    SchoolProvider,
+    SelfAssessmentAssignmentProvider,
+    SelfAssessmentProvider,
+    StudentProvider,
+    TeacherProvider,
+    TeacherCourseProvider,
+    UserProvider,
   ]
 })
 export class AppModule {}
