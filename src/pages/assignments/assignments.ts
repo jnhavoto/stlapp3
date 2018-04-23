@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {ServiceProvider} from "../../providers/service/service";
+import {AssignmentDescriptionProvider} from "../../providers/assignment-description/assignment-description";
 //import {AssigndetailsPage} from "../assigndetails/assigndetails";
 
 /**
@@ -17,19 +18,22 @@ import {ServiceProvider} from "../../providers/service/service";
 })
 export class AssignmentsPage {
 
-  arryAssignments: Array<any>;
+  arrayAssignments: Array<any>;
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              private assignments: ServiceProvider) {
+              private assignments: AssignmentDescriptionProvider) {
       this.fill();
   }
 
+    /**
+     * List all assignements
+     */
   fill(){
-      this.assignments.getAssignments().subscribe(
+      this.assignments.getAllAssignmentsDescription().subscribe(
           data => {
-              this.arryAssignments=data["assignment_description"];
-              console.log(this.arryAssignments);
+              this.arrayAssignments=data["assignment_description"];
+              console.log(this.arrayAssignments);
           },
           error2 => {
               console.log(error2)

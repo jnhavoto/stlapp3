@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import {IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
 import { HttpClientModule } from '@angular/common/http';
-
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +18,6 @@ import {WelcomePage} from "../pages/welcome/welcome";
 import { AuthenticationProvider } from '../providers/authentication/authentication';
 import {MessagesPage} from "../pages/messages/messages";
 import {AssignmendescPage} from "../pages/assignmendesc/assignmendesc";
-import { TtesteProvider } from '../providers/tteste/tteste';
 import { AssignmentDescriptionProvider } from '../providers/assignment-description/assignment-description';
 import { AssignmentSubmissionProvider } from '../providers/assignment-submission/assignment-submission';
 import { CityProvider } from '../providers/city/city';
@@ -37,7 +34,6 @@ import { StudentProvider } from '../providers/student/student';
 import { TeacherProvider } from '../providers/teacher/teacher';
 import { TeacherCourseProvider } from '../providers/teacher-course/teacher-course';
 import { UserProvider } from '../providers/user/user';
-//import {AssigndetailsPage} from "../pages/assigndetails/assigndetails";
 
 
 @NgModule({
@@ -80,7 +76,7 @@ import { UserProvider } from '../providers/user/user';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ServiceProvider,
     AuthenticationProvider,
-    TtesteProvider,
+    // TtesteProvider,
     AssignmentDescriptionProvider,
     AssignmentSubmissionProvider,
     CityProvider,

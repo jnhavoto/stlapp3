@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Observable} from "rxjs/Observable";
+import "rxjs/add/operator/map";
 
 /*
   Generated class for the AssignmentDescriptionProvider provider.
@@ -35,7 +36,7 @@ export class AssignmentDescriptionProvider {
     getLastAssignmentDescription() : Observable<any>{
         const  headers = new HttpHeaders({'Content-Type': 'application/json'})
         let url = 'http://127.0.0.1:8000/api/last-assignment-descriptions';
-        return this.http.get(url, {headers: headers});
+        return this.http.get(url, {headers: headers}).map((resposta:any)=>resposta.json());
     }
 
     /**
@@ -83,7 +84,5 @@ export class AssignmentDescriptionProvider {
         let url = 'http://127.0.0.1:8000/api/assignment-description/'+id;
         return this.http.delete(url, {headers: headers});
     }
-
-
 
 }

@@ -1,9 +1,8 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, App} from 'ionic-angular';
 import {LoginPage} from "../login/login";
-//import { MyprofilePage } from '../myprofile/myprofile';
 import {global} from "../global";
-import {ServiceProvider} from "../../providers/service/service";
+import {AssignmentDescriptionProvider} from "../../providers/assignment-description/assignment-description";
 
 /**
  * Generated class for the HomePage page.
@@ -22,19 +21,22 @@ export class HomePage {
 
     user: any;
     public userAuth = {user: {}};
-    last_assignment: any;
+    last_assignment: any="";
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public app: App,
-                private assignments: ServiceProvider)
+                private assignments: AssignmentDescriptionProvider)
     {
         this.user = global.loginState.user[0];
         this.getLastAssignment();
     }
-//get all assignments
-    fill(){
-        this.assignments.getAssignments().subscribe(
+
+    /**
+     * Method to retrieve all AssignmentDescription
+     */
+    getAllAssignments(){
+        this.assignments.getAllAssignmentsDescription().subscribe(
             data => {
                 console.log(data);
             },
@@ -43,9 +45,12 @@ export class HomePage {
             }
         )
     }
-//Get the las Assignment ordered by deadline
+
+    /**
+     * Method to retrieve the last assignment ordered by deadline
+     */
     getLastAssignment(){
-        this.assignments.getLastAssignment().subscribe(
+        this.assignments.getLastAssignmentDescription().subscribe(
             data => {
                 this.last_assignment=data["lastAssignment"];
                 console.log("Last assign");
